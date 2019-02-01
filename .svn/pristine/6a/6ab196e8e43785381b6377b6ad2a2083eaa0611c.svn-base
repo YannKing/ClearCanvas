@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="MenuWindowTileHorizontal" xml:space="preserve">
+    <value>平铺 &amp;横向</value>
+    <comment>Tile &amp;Horizontal</comment>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Stop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Stop.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExceptionMinimumTooLarge" xml:space="preserve">
+    <value>最小值必须小于最大值。</value>
+    <comment>Minimum must be less than maximum.</comment>
+  </data>
+  <data name="CheckSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\CheckSmall.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExceptionValueMustNotBeNegative" xml:space="preserve">
+    <value>该值不能为负值。</value>
+    <comment>The value must not be negative.</comment>
+  </data>
+  <data name="MenuWindowTileVertical" xml:space="preserve">
+    <value>平铺 &amp;垂直</value>
+    <comment>Tile &amp;Vertical</comment>
+  </data>
+  <data name="ExceptionHandlerMessagePrefix" xml:space="preserve">
+    <value>消息：</value>
+    <comment>Message:</comment>
+  </data>
+  <data name="MenuBar" xml:space="preserve">
+    <value>主菜单</value>
+    <comment>Main Menu</comment>
+  </data>
+  <data name="ExceptionDelayedEventDelegateArgument" xml:space="preserve">
+    <value>委托必须接受两个参数: 一个对象和一个与 system. eventargs 类型兼容的类型的实例。</value>
+    <comment>The delegate must accept two arguments: an object and an instance of type compatible with the System.EventArgs type.</comment>
+  </data>
+  <data name="MenuWindowCascade" xml:space="preserve">
+    <value>层叠&amp;Cascade</value>
+    <comment>&amp;Cascade</comment>
+  </data>
+  <data name="ExceptionHandlerInnerExceptionText" xml:space="preserve">
+    <value>************** 内部异常文本 **************</value>
+    <comment>************** InnerException Text **************</comment>
+  </data>
+  <data name="Splash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Splash.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExceptionMaximumTooSmall" xml:space="preserve">
+    <value>最大值必须大于最小值。</value>
+    <comment>Maximum must be greater than minimum.</comment>
+  </data>
+  <data name="ClearFilterSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ClearFilterSmall.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MessageEmptyFilter" xml:space="preserve">
+    <value>在此处输入文本以筛选表</value>
+    <comment>Enter text here to filter table</comment>
+  </data>
+  <data name="MessageFilterBy" xml:space="preserve">
+    <value>筛选依据: {0}</value>
+    <comment>Filter by: {0}</comment>
+  </data>
+  <data name="MessageSortBy" xml:space="preserve">
+    <value>排序方式: {0}</value>
+    <comment>Sort by: {0}</comment>
+  </data>
+  <data name="ItemClear" xml:space="preserve">
+    <value>清除</value>
+    <comment>Clear</comment>
+  </data>
+  <data name="ClearFilterMini" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ClearFilterMini.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LabelKeyboardShortcut" xml:space="preserve">
+    <value>快捷方式</value>
+    <comment>Shortcut</comment>
+  </data>
+  <data name="MessageErrorRetrievingSubtree" xml:space="preserve">
+    <value>检索数据时出错</value>
+    <comment>Error retrieving data</comment>
+  </data>
+  <data name="SearchToolMini" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\SearchToolMini.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MessageSearchBy" xml:space="preserve">
+    <value>搜索方式: {0}</value>
+    <comment>Search by: {0}</comment>
+  </data>
+  <data name="MessageEmptySearchTree" xml:space="preserve">
+    <value>在此处输入文本以搜索树</value>
+    <comment>Enter text here to search tree</comment>
+  </data>
+  <data name="FormatListSeparator" xml:space="preserve">
+    <value>, </value>
+    <comment>,</comment>
+  </data>
+  <data name="FormatExceptionDetails" xml:space="preserve">
+    <value>{0}: {1}</value>
+    <comment>{0}: {1}</comment>
+  </data>
+  <data name="MenuContinue" xml:space="preserve">
+    <value>&amp;继续</value>
+    <comment>&amp;Continue</comment>
+  </data>
+  <data name="MenuHideDetails" xml:space="preserve">
+    <value>&amp;详细信息 &lt;&lt;</value>
+    <comment>&amp;Details &lt;&lt;</comment>
+  </data>
+  <data name="MenuShowDetails" xml:space="preserve">
+    <value>&amp;详细信息 &gt;&gt;</value>
+    <comment>&amp;Details &gt;&gt;</comment>
+  </data>
+  <data name="ButtonAbort" xml:space="preserve">
+    <value>&amp;中止</value>
+    <comment>&amp;Abort</comment>
+  </data>
+  <data name="ButtonCancel" xml:space="preserve">
+    <value>取消</value>
+    <comment>Cancel</comment>
+  </data>
+  <data name="ButtonIgnore" xml:space="preserve">
+    <value>&amp;忽略</value>
+    <comment>&amp;Ignore</comment>
+  </data>
+  <data name="ButtonNo" xml:space="preserve">
+    <value>&amp;否</value>
+    <comment>&amp;No</comment>
+  </data>
+  <data name="ButtonOk" xml:space="preserve">
+    <value>好</value>
+    <comment>OK</comment>
+  </data>
+  <data name="ButtonRetry" xml:space="preserve">
+    <value>&amp;重试</value>
+    <comment>&amp;Retry</comment>
+  </data>
+  <data name="ButtonYes" xml:space="preserve">
+    <value>&amp;是</value>
+    <comment>&amp;Yes</comment>
+  </data>
+  <data name="ErrorSaveFileToInstallPath" xml:space="preserve">
+    <value>您正在尝试将文件保存在 本程序的 安装目录中。 请选择其他位置。</value>
+    <comment>You are attempting to save the file inside the ClearCanvas installation directory.  Please choose another location.</comment>
+  </data>
+  <data name="LinkMoreNewAlerts" xml:space="preserve">
+    <value>+ {0} 更多新的错误/警告</value>
+    <comment>+ {0} more new errors/warnings</comment>
+  </data>
+  <data name="LinkViewAllAlerts" xml:space="preserve">
+    <value>查看所有警报</value>
+    <comment>View all alerts</comment>
+  </data>
+</root>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database Name="dicom_store" EntityNamespace="DicomStoreContext" ContextNamespace="DicomStoreContext" Class="DicomStoreDataContext" xmlns:ed="http://devart.com/schemas/EntityDeveloper/1.0" ed:Guid="bba92543-af21-46fe-810f-a4dd714dc979" Provider="Devart.Data.MySql.Linq.Provider.MySqlDataProvider, Devart.Data.MySql.Linq" Extended="true" xmlns="http://schemas.devart.com/linqconnect/mapping">
+  <Connection Mode="ConnectionString" ConnectionString="User Id=root;Password=admin1,;Host=127.0.0.1;Database=dicom_store;Persist Security Info=True" Provider="Devart.Data.MySql" />
+  <Table Name="dicom_store.configuration" Member="Configurations">
+    <Type Name="Configuration" ed:Guid="f7d07664-da33-4315-a519-de584e656870">
+      <Column Name="Oid" Type="System.Int64" AutoSync="OnInsert" DbType="BIGINT(20) NOT NULL AUTO_INCREMENT" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" UpdateCheck="Always" Precision="20" ed:ValidateRequired="true" ed:Guid="cf48c437-9254-444c-b22a-50a51b8cfcd3" />
+      <Column Name="Version" Type="System.DateTime" DbType="TIMESTAMP NULL" CanBeNull="true" UpdateCheck="Never" DefaultValue="CURRENT_TIMESTAMP" ed:ValidateRequired="false" ed:Guid="80ac3301-1c87-45db-b6e6-94ad3fb9cccf" />
+      <Column Name="Name" Type="System.String" DbType="VARCHAR(100) NOT NULL" CanBeNull="false" UpdateCheck="Never" MaxLength="100" Unicode="true" ed:ValidateMaxLength="100" ed:ValidateRequired="true" ed:Guid="e5d23e4c-d759-4252-94ef-3b7937fcdbc8" />
+      <Column Name="Value" Type="System.String" DbType="TEXT NULL" CanBeNull="true" UpdateCheck="Never" Unicode="true" ed:ValidateRequired="false" ed:Guid="e035e268-4c14-475e-95bd-22a9080224cd" />
+    </Type>
+  </Table>
+  <Table Name="dicom_store.device" Member="Devices">
+    <Type Name="Device" ed:Guid="82c6c470-e005-4388-a753-350bd607b64f">
+      <Column Name="Oid" Type="System.Int64" AutoSync="OnInsert" DbType="BIGINT(20) NOT NULL AUTO_INCREMENT" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" UpdateCheck="Always" Precision="20" ed:ValidateRequired="true" ed:Guid="6f6dcf4c-f7b6-4705-910e-4cf7db8d091b" />
+      <Column Name="Version" Type="System.DateTime" DbType="TIMESTAMP NULL" CanBeNull="true" UpdateCheck="Never" DefaultValue="CURRENT_TIMESTAMP" ed:ValidateRequired="false" ed:Guid="a70e4dcb-2e04-423c-bd17-953a67dc08bf" />
+      <Column Name="Name" Type="System.String" DbType="VARCHAR(64) NOT NULL" CanBeNull="false" UpdateCheck="Never" MaxLength="64" Unicode="true" ed:ValidateMaxLength="64" ed:ValidateRequired="true" ed:Guid="004c89ed-b482-4d7f-a2ef-e2f325150ffb" />
+      <Column Name="Description" Type="System.String" DbType="VARCHAR(64) NULL" CanBeNull="true" UpdateCheck="Never" MaxLength="64" Unicode="true" ed:ValidateMaxLength="64" ed:ValidateRequired="false" ed:Guid="2d2be7dd-4a9e-4dbc-aec1-2f9c052db7c8" />
+      <Column Name="Location" Type="System.String" DbType="VARCHAR(64) NULL" CanBeNull="true" UpdateCheck="Never" MaxLength="64" Unicode="true" ed:ValidateMaxLength="64" ed:ValidateRequired="false" ed:Guid="10cbca4f-947b-4332-9faa-0edbfd17f8aa" />
+      <Column Name="AETitle" Type="System.String" DbType="VARCHAR(64) NOT NULL" CanBeNull="false" UpdateCheck="Never" MaxLength="64" Unicode="true" ed:ValidateMaxLength="64" ed:ValidateRequired="true" ed:Guid="bf64a5bd-d16b-4034-93a7-387fe149225f" />
+      <Column Name="HostName" Type="System.String" DbType="VARCHAR(64) NOT NULL" CanBeNull="false" UpdateCheck="Never" MaxLength="64" Unicode="true" ed:ValidateMaxLength="64" ed:ValidateRequired="true" ed:Guid="2c0597b8-fe11-48e0-b481-aa81d9dfc5df" />
+      <Column Name="Port" Type="System.Int32" DbType="INT(11) NOT NULL" CanBeNull="false" UpdateCheck="Never" Precision="11" ed:ValidateRequired="true" ed:Guid="aceb3043-e161-41e4-ba99-a0598b5daebb" />
+      <Column Name="StreamingHeaderPort" Type="System.Int32" DbType="INT(11) NULL" CanBeNull="true" UpdateCheck="Never" Precision="11" ed:ValidateRequired="false" ed:Guid="a6c64662-8a4d-4cbc-bf38-40a5c94f32f9" />
+      <Column Name="StreamingImagePort" Type="System.Int32" DbType="INT(11) NULL" CanBeNull="true" UpdateCheck="Never" Precision="11" ed:ValidateRequired="false" ed:Guid="74f3a7f8-6a76-4329-98fa-eabd6ece144e" />
+      <Column Name="IsPriorsServer" Type="System.Boolean" DbType="BIT NOT NULL" CanBeNull="false" UpdateCheck="Never" ed:ValidateRequired="true" ed:Guid="11bea476-198b-4314-91fb-bd93bdbd269a" />
+      <Column Name="ExtensionData" Type="System.String" DbType="TEXT NULL" CanBeNull="true" UpdateCheck="Never" Unicode="true" ed:ValidateRequired="false" ed:Guid="f6fa983f-3700-4bd6-a691-80c3c13e9365" />
+    </Type>
+  </Table>
+  <Table Name="dicom_store.study" Member="Studies">
+    <Type Name="Study" ed:Guid="f35a08d9-8d63-42d1-afbb-4a0a94daabdf">
+      <Column Name="Oid" Type="System.Int64" AutoSync="OnInsert" DbType="BIGINT(20) NOT NULL AUTO_INCREMENT" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" UpdateCheck="Always" Precision="20" ed:ValidateRequired="true" ed:Guid="4ab83e17-bfdc-4ee0-ac76-a1fe17e595f4" />
+      <Column Name="Version" Type="System.DateTime" DbType="TIMESTAMP NULL" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="49f894b5-a25c-474c-a09c-510a2aa1486b" />
+      <Column Name="SpecificCharacterSet" Type="System.String" DbType="VARCHAR(64) NULL" CanBeNull="true" UpdateCheck="Never" MaxLength="64" Unicode="true" ed:ValidateMaxLength="64" ed:ValidateRequired="false" ed:Guid="866cfb14-1da0-49b9-87cd-ef726fd1633a" />
+      <Column Name="StudyId" Type="System.String" DbType="VARCHAR(16) NULL" CanBeNull="true" UpdateCheck="Never" MaxLength="16" Unicode="true" ed:ValidateMaxLength="16" ed:ValidateRequired="false" ed:Guid="6c791bc4-a738-41f9-81c7-833fc4eec557" />
+      <Column Name="StudyTimeTicks" Type="System.Int64" DbType="BIGINT(20) NULL" CanBeNull="true" UpdateCheck="Never" Precision="20" ed:ValidateRequired="false" ed:Guid="d29c1220-fb60-462f-9ee8-bef052f5d590" />
+      <Column Name="StudyTimeRaw" Type="System.String" DbType="VARCHAR(16) NULL" CanBeNull="true" UpdateCheck="Never" MaxLength="16" Unicode="true" ed:ValidateMaxLength="16" ed:ValidateRequired="false" ed:Guid="0e869ff9-f059-42be-870a-cb169f7258e9" />
+      <Column Name="StudyDate" Type="System.DateTime" DbType="DATETIME NULL" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="d4fe2984-9f1e-4e96-addf-6ae6a1a32275" />
+      <Column Name="StudyDateRaw" Type="System.String" DbType="VARCHAR(26) NULL" CanBeNull="true" UpdateCheck="Never" MaxLength="26" Unicode="true" ed:ValidateMaxLength="26" ed:ValidateRequired="false" ed:Guid="6554a874-0475-4b9b-9af4-4866e005d817" />
+      <Column Name="AccessionNumber" Type="System.String" DbType="VARCHAR(16) NULL" CanBeNull="true" UpdateCheck="Never" MaxLength="16" Unicode="true" ed:ValidateMaxLength="16" ed:ValidateRequired="false" ed:Guid="9f0284eb-b135-4c5d-b815-87e7131f5236" />
+      <Column Name="StudyInstanceUid" Type="System.String" DbType="VARCHAR(64) NOT NULL" CanBeNull="false" UpdateCheck="Never" MaxLength="64" Unicode="true" ed:ValidateMaxLength="64" ed:ValidateRequired="true" ed:Guid="0e3bff6e-d6ef-4754-a810-2f5f943c8cc9" />
+      <Column Name="StudyDescription" Type="System.String" DbType="VARCHAR(64) NULL" CanBeNull="true" UpdateCheck="Never" MaxLength="64" Unicode="true" ed:ValidateMaxLength="64" ed:ValidateRequired="false" ed:Guid="0361752a-60d6-47ce-b64f-bd4639e9ced9" />
+      <Column Name="ModalitiesInStudy" Type="System.String" DbType="VARCHAR(4000) NULL" CanBeNull="true" UpdateCheck="Never" MaxLength="4000" Unicode="true" ed:ValidateMaxLength="4000" ed:ValidateRequired="false" ed:Guid="2b1216cc-f17e-4d5b-863b-37dc8333965f" />
+      <Column Name="SopClassesInStudy" Type="System.String" DbType="VARCHAR(4000) NULL" CanBeNull="true" UpdateCheck="Never" MaxLength="4000" Unicode="true" ed:ValidateMaxLength="4000" ed:ValidateRequired="false" ed:Guid="fc60e36e-1e9c-4846-a1fa-c4581ba46820" />
+      <Column Name="NumberOfStudyRelatedSeries" Type="System.Int32" DbType="INT(11) NULL" CanBeNull="true" UpdateCheck="Never" Precision="11" ed:ValidateRequired="false" ed:Guid="643500bb-c8d0-41f6-acd0-d9733b588cc8" />
+      <Column Name="NumberOfStudyRelatedInstances" Type="System.Int32" DbType="INT(11) NULL" CanBeNull="true" UpdateCheck="Never" Precision="11" ed:ValidateRequired="false" ed:Guid="053630ff-cf4a-4208-b088-6538bc91ccf6" />
+      <Column Name="ProcedureCodeSequenceCodingSchemeDesignator" Type="System.String" DbType="VARCHAR(16) NULL" CanBeNull="true" UpdateCheck="Never" MaxLength="16" Unicode="true" ed:ValidateMaxLength="16" ed:ValidateRequired="false" ed:Guid="e10cb2d8-0c63-4ce5-97d1-86bfca4dcec2" />
+      <Column Name="ProcedureCodeSequenceCodeValue" Type="System.String" DbType="VARCHAR(16) NULL" CanBeNull="true" UpdateCheck="Never" MaxLength="16" Unicode="true" ed:ValidateMaxLength="16" ed:ValidateRequired="false" ed:Guid="aaa220e7-9db0-4172-99c2-cf22e029dbb1" />
+      <Column Name="PatientsName" Type="System.String" DbType="VARCHAR(256) NULL" CanBeNull="true" UpdateCheck="Never" MaxLength="256" Unicode="true" ed:ValidateMaxLength="256" ed:ValidateRequired="false" ed:Guid="61bba6eb-789f-4743-bc49-862ac784d0f2" />
+      <Column Name="ReferringPhysiciansName" Type="System.String" DbType="VARCHAR(256) NULL" CanBeNull="true" UpdateCheck="Never" MaxLength="256" Unicode="true" ed:ValidateMaxLength="256" ed:ValidateRequired="false" ed:Guid="adb2e3e1-6014-4e6d-8ad4-9eef08ae3cd2" />
+      <Column Name="PatientId" Type="System.String" DbType="VARCHAR(64) NULL" CanBeNull="true" UpdateCheck="Never" MaxLength="64" Unicode="true" ed:ValidateMaxLength="64" ed:ValidateRequired="false" ed:Guid="b210e4e9-32a1-4a9e-8516-56da1c3db3e5" />
+      <Column Name="PatientsSex" Type="System.String" DbType="VARCHAR(16) NULL" CanBeNull="true" UpdateCheck="Never" MaxLength="16" Unicode="true" ed:ValidateMaxLength="16" ed:ValidateRequired="false" ed:Guid="cadfb49c-e979-425f-8c87-366bbbef9ae1" />
+      <Column Name="PatientsBirthDate" Type="System.DateTime" DbType="DATETIME NULL" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="0e2928b1-7bc7-4244-8c9f-ea3118d00b39" />
+      <Column Name="PatientsBirthDateRaw" Type="System.String" DbType="VARCHAR(16) NULL" CanBeNull="true" UpdateCheck="Never" MaxLength="16" Unicode="true" ed:ValidateMaxLength="16" ed:ValidateRequired="false" ed:Guid="e2341d81-3473-4056-94cc-e42364f03de8" />
+      <Column Name="PatientsBirthTimeTicks" Type="System.Int64" DbType="BIGINT(20) NULL" CanBeNull="true" UpdateCheck="Never" Precision="20" ed:ValidateRequired="false" ed:Guid="e47f8add-7baf-4285-86e3-958dd1c3f351" />
+      <Column Name="PatientsBirthTimeRaw" Type="System.String" DbType="VARCHAR(16) NULL" CanBeNull="true" UpdateCheck="Never" MaxLength="16" Unicode="true" ed:ValidateMaxLength="16" ed:ValidateRequired="false" ed:Guid="c365c2e6-5301-4f4c-82e4-f61b59e5291f" />
+      <Column Name="PatientSpeciesDescription" Type="System.String" DbType="VARCHAR(64) NULL" CanBeNull="true" UpdateCheck="Never" MaxLength="64" Unicode="true" ed:ValidateMaxLength="64" ed:ValidateRequired="false" ed:Guid="84040011-0a78-42f4-875d-a143e5309062" />
+      <Column Name="PatientSpeciesCodeSequenceCodingSchemeDesignator" Type="System.String" DbType="VARCHAR(16) NULL" CanBeNull="true" UpdateCheck="Never" MaxLength="16" Unicode="true" ed:ValidateMaxLength="16" ed:ValidateRequired="false" ed:Guid="01aaa6a7-b608-4de0-82d8-5406f68911c0" />
+      <Column Name="PatientSpeciesCodeSequenceCodeValue" Type="System.String" DbType="VARCHAR(16) NULL" CanBeNull="true" UpdateCheck="Never" MaxLength="16" Unicode="true" ed:ValidateMaxLength="16" ed:ValidateRequired="false" ed:Guid="c77e949d-e05c-4753-aea1-c6d185149063" />
+      <Column Name="PatientSpeciesCodeSequenceCodeMeaning" Type="System.String" DbType="VARCHAR(64) NULL" CanBeNull="true" UpdateCheck="Never" MaxLength="64" Unicode="true" ed:ValidateMaxLength="64" ed:ValidateRequired="false" ed:Guid="ad4126c6-8ce4-47e0-a047-124861c5ed01" />
+      <Column Name="PatientBreedDescription" Type="System.String" DbType="VARCHAR(64) NULL" CanBeNull="true" UpdateCheck="Never" MaxLength="64" Unicode="true" ed:ValidateMaxLength="64" ed:ValidateRequired="false" ed:Guid="9fb33ee5-a7bd-49c1-b9c4-0d1f578c5f7d" />
+      <Column Name="PatientBreedCodeSequenceCodingSchemeDesignator" Type="System.String" DbType="VARCHAR(16) NULL" CanBeNull="true" UpdateCheck="Never" MaxLength="16" Unicode="true" ed:ValidateMaxLength="16" ed:ValidateRequired="false" ed:Guid="160da982-1ef4-4727-b3d7-152748be0a79" />
+      <Column Name="PatientBreedCodeSequenceCodeValue" Type="System.String" DbType="VARCHAR(16) NULL" CanBeNull="true" UpdateCheck="Never" MaxLength="16" Unicode="true" ed:ValidateMaxLength="16" ed:ValidateRequired="false" ed:Guid="af31688d-f01e-42b5-834f-85b0832bbd43" />
+      <Column Name="PatientBreedCodeSequenceCodeMeaning" Type="System.String" DbType="VARCHAR(64) NULL" CanBeNull="true" UpdateCheck="Never" MaxLength="64" Unicode="true" ed:ValidateMaxLength="64" ed:ValidateRequired="false" ed:Guid="1aa53ac6-5201-4eee-a257-90afbc4d8cc9" />
+      <Column Name="ResponsiblePerson" Type="System.String" DbType="VARCHAR(256) NULL" CanBeNull="true" UpdateCheck="Never" MaxLength="256" Unicode="true" ed:ValidateMaxLength="256" ed:ValidateRequired="false" ed:Guid="053994d9-e014-447f-ad14-53473fd71dc3" />
+      <Column Name="ResponsiblePersonRole" Type="System.String" DbType="VARCHAR(16) NULL" CanBeNull="true" UpdateCheck="Never" MaxLength="16" Unicode="true" ed:ValidateMaxLength="16" ed:ValidateRequired="false" ed:Guid="8291c207-9362-4a7b-9412-cf4f39a655c6" />
+      <Column Name="ResponsibleOrganization" Type="System.String" DbType="VARCHAR(64) NULL" CanBeNull="true" UpdateCheck="Never" MaxLength="64" Unicode="true" ed:ValidateMaxLength="64" ed:ValidateRequired="false" ed:Guid="27572466-226c-4d05-8094-93ffca5af89d" />
+      <Column Name="SourceAETitlesInStudy" Type="System.String" DbType="VARCHAR(4000) NULL" CanBeNull="true" UpdateCheck="Never" MaxLength="4000" Unicode="true" ed:ValidateMaxLength="4000" ed:ValidateRequired="false" ed:Guid="ce79b815-7de7-4995-be02-f1b009cfef6e" />
+      <Column Name="StationNamesInStudy" Type="System.String" DbType="VARCHAR(4000) NULL" CanBeNull="true" UpdateCheck="Never" MaxLength="4000" Unicode="true" ed:ValidateMaxLength="4000" ed:ValidateRequired="false" ed:Guid="56e82c09-e953-4fd9-8b28-c14fef8cf0f3" />
+      <Column Name="InstitutionNamesInStudy" Type="System.String" DbType="VARCHAR(4000) NULL" CanBeNull="true" UpdateCheck="Never" MaxLength="4000" Unicode="true" ed:ValidateMaxLength="4000" ed:ValidateRequired="false" ed:Guid="4248ff17-f360-454b-b453-495e24360bb3" />
+      <Column Name="StoreTime" Type="System.DateTime" DbType="DATETIME NULL" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="5f321106-ae2a-4062-b6aa-ca881652803e" />
+      <Column Name="DeleteTime" Type="System.DateTime" DbType="DATETIME NULL" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="a5cc33aa-da55-499d-bb4e-fdb9a942ccd8" />
+      <Column Name="Deleted" Type="System.Boolean" DbType="BIT NOT NULL" CanBeNull="false" UpdateCheck="Never" ed:ValidateRequired="true" ed:Guid="c566f0c3-92b9-4624-9d01-bd065f3d8e4a" />
+      <Column Name="Reindex" Type="System.Boolean" DbType="BIT NOT NULL" CanBeNull="false" UpdateCheck="Never" ed:ValidateRequired="true" ed:Guid="1fb0cfac-996e-405f-9467-5cf86a219ba6" />
+    </Type>
+  </Table>
+  <Table Name="dicom_store.workitem" Member="Workitems">
+    <Type Name="Workitem" ed:Guid="38cb17d1-d977-492c-b66f-0490134f33ba">
+      <Column Name="Oid" Type="System.Int64" AutoSync="OnInsert" DbType="BIGINT(20) NOT NULL AUTO_INCREMENT" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" UpdateCheck="Always" Precision="20" ed:ValidateRequired="true" ed:Guid="03319ee5-c716-4773-a4d7-ce1cbebda3f0" />
+      <Column Name="Version" Type="System.DateTime" DbType="TIMESTAMP NULL" CanBeNull="true" UpdateCheck="Never" DefaultValue="CURRENT_TIMESTAMP" ed:ValidateRequired="false" ed:Guid="7a491d9b-3bff-44d7-91f7-efcbe8b718f4" />
+      <Column Name="ScheduledTime" Type="System.DateTime" DbType="DATETIME NULL" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="984926ae-0e75-4810-a6c5-5e275b98b617" />
+      <Column Name="ExpirationTime" Type="System.DateTime" DbType="DATETIME NULL" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="8e869b83-a6ec-46ab-9628-46b4cad4ceae" />
+      <Column Name="DeleteTime" Type="System.DateTime" DbType="DATETIME NULL" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="1a44e148-ac26-42d6-908e-f1759dd927f2" />
+      <Column Name="ProcessTime" Type="System.DateTime" DbType="DATETIME NULL" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="75698bca-3a61-4aef-ab89-1bc75fa61876" />
+      <Column Name="RequestedTime" Type="System.DateTime" DbType="DATETIME NULL" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="7105a80c-43a0-41ff-9609-a13423a08e5b" />
+      <Column Name="Status" Type="System.Int16" DbType="SMALLINT(6) NULL" CanBeNull="true" UpdateCheck="Never" Precision="6" ed:ValidateRequired="false" ed:Guid="405b17b6-6d99-44c1-bb06-9c917b15e32b" />
+      <Column Name="Type" Type="System.String" DbType="VARCHAR(32) NULL" CanBeNull="true" UpdateCheck="Never" MaxLength="32" Unicode="true" ed:ValidateMaxLength="32" ed:ValidateRequired="false" ed:Guid="77886a75-c2bf-4332-a84d-249781a097cc" />
+      <Column Name="Priority" Type="System.Int16" DbType="SMALLINT(6) NULL" CanBeNull="true" UpdateCheck="Never" Precision="6" ed:ValidateRequired="false" ed:Guid="108403f8-d78a-486b-9c5d-e6277aff881c" />
+      <Column Name="FailureCount" Type="System.Int16" DbType="SMALLINT(6) NULL" CanBeNull="true" UpdateCheck="Never" Precision="6" ed:ValidateRequired="false" ed:Guid="7508c908-998c-4428-a195-a5ba70d91c05" />
+      <Column Name="StudyInstanceUid" Type="System.String" DbType="VARCHAR(64) NULL" CanBeNull="true" UpdateCheck="Never" MaxLength="64" Unicode="true" ed:ValidateMaxLength="64" ed:ValidateRequired="false" ed:Guid="665b97a9-431e-42f8-bf31-e5f9ca1084ce" />
+      <Column Name="SerializedRequest" Type="System.String" DbType="TEXT NULL" CanBeNull="true" UpdateCheck="Never" Unicode="true" ed:ValidateRequired="false" ed:Guid="2c8ab159-1bd2-417b-98b8-9efa323e4b21" />
+      <Column Name="SerializedProgress" Type="System.String" DbType="TEXT NULL" CanBeNull="true" UpdateCheck="Never" Unicode="true" ed:ValidateRequired="false" ed:Guid="edd385cf-fdb9-44a0-8f2f-7a7972fd833c" />
+      <Association Name="Workitem_Workitemuid" ed:AssociationGuid="b99c160e-f5da-4357-b986-e8a0dfc37657" Member="Workitemuids" ed:Guid="5585198f-8dd8-4357-8dc4-caf53ad0c95a" ThisKey="Oid" OtherKey="WorkItemOid" Type="Workitemuid" />
+    </Type>
+  </Table>
+  <Table Name="dicom_store.workitemuid" Member="Workitemuids">
+    <Type Name="Workitemuid" ed:Guid="ec37feda-af9d-4bcf-8994-a87ec437c892">
+      <Column Name="Oid" Type="System.Int64" AutoSync="OnInsert" DbType="BIGINT(20) NOT NULL AUTO_INCREMENT" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" UpdateCheck="Always" Precision="20" ed:ValidateRequired="true" ed:Guid="bc0ec93f-758c-44ff-9033-5fae603b71fb" />
+      <Column Name="Version" Type="System.DateTime" DbType="TIMESTAMP NULL" CanBeNull="true" UpdateCheck="Never" DefaultValue="CURRENT_TIMESTAMP" ed:ValidateRequired="false" ed:Guid="36074f17-5a2a-4b66-b368-3aabfa16ffb9" />
+      <Column Name="WorkItemOid" Type="System.Int64" DbType="BIGINT(20) NULL" CanBeNull="true" UpdateCheck="Never" Precision="20" ed:ValidateRequired="false" ed:Guid="1667705c-a0cf-4a65-b02f-53523238a428" />
+      <Column Name="SeriesInstanceUid" Type="System.String" DbType="VARCHAR(64) NULL" CanBeNull="true" UpdateCheck="Never" MaxLength="64" Unicode="true" ed:ValidateMaxLength="64" ed:ValidateRequired="false" ed:Guid="edf29eab-0179-4871-a986-f37910692fcc" />
+      <Column Name="SopInstanceUid" Type="System.String" DbType="VARCHAR(64) NULL" CanBeNull="true" UpdateCheck="Never" MaxLength="64" Unicode="true" ed:ValidateMaxLength="64" ed:ValidateRequired="false" ed:Guid="709a383d-f2f8-4827-8b24-0e2ba554cf5c" />
+      <Column Name="Complete" Type="System.Boolean" DbType="BIT NULL" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="e29c033e-62ef-4720-a86b-dd1c10c10220" />
+      <Column Name="FailureCount" Type="System.SByte" DbType="TINYINT NULL" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="3e78324d-6d6c-4088-a401-efecec42f91f" />
+      <Column Name="Failed" Type="System.Boolean" DbType="BIT NULL" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="60b45acf-1682-47f8-81c6-ee9e0ebe8240" />
+      <Column Name="File" Type="System.String" DbType="VARCHAR(128) NULL" CanBeNull="true" UpdateCheck="Never" MaxLength="128" Unicode="true" ed:ValidateMaxLength="128" ed:ValidateRequired="false" ed:Guid="aa9307a3-b25f-45ea-a658-596fc0f37760" />
+      <Association Name="Workitem_Workitemuid" ed:AssociationGuid="b99c160e-f5da-4357-b986-e8a0dfc37657" Member="Workitem" ed:Guid="f8fa98d4-9153-4dcf-82ab-4bdbcbd1449b" ThisKey="WorkItemOid" OtherKey="Oid" Type="Workitem" DeleteRule="NO ACTION" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

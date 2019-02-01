@@ -1,0 +1,278 @@
+<Project DefaultTargets="Default Target" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <UsingTask TaskName="ClearCanvas.Utilities.BuildTasks.RegexIsMatch" AssemblyFile="$(ProjectDir)\..\..\ReferencedAssemblies\MSBuild\ClearCanvas.Utilities.BuildTasks.dll"/>
+
+  <Choose>
+    <When Condition=" '$(PROCESSOR_ARCHITEW6432)' == 'IA64' Or '$(PROCESSOR_ARCHITEW6432)' == 'AMD64' Or '$(PROCESSOR_ARCHITECTURE)' == 'IA64' Or '$(PROCESSOR_ARCHITECTURE)' == 'AMD64'">
+      <PropertyGroup>
+        <BuildPlatform>x64</BuildPlatform>
+      </PropertyGroup>
+    </When>
+    <When Condition="'$(PROCESSOR_ARCHITECTURE)' == 'x86' ">
+      <PropertyGroup>
+        <BuildPlatform>x86</BuildPlatform>
+      </PropertyGroup>
+    </When>
+    <Otherwise>
+      <PropertyGroup>
+        <BuildPlatform></BuildPlatform>
+      </PropertyGroup>
+    </Otherwise>
+  </Choose>
+
+  <PropertyGroup>
+    <!-- The 'ProjectOutDir' property is the default output folder of the project and should not be overridden -->
+    <!--“ProjectOutDir”属性是项目的默认输出文件夹，不应覆盖-->
+    <ProjectOutDir>$(ProjectDir)\$(OutDir)</ProjectOutDir>
+    <DeletePlugins>true</DeletePlugins>
+  </PropertyGroup>
+
+  <!-- If DistributionDirectory were set directly on the command line, we would be unable to override it.-->
+  <!--如果直接在命令行上设置DistributionDirectory，我们将无法覆盖它。-->
+  <!-- Therefore, DistributionDir is the command line variable, and we set DistributionDirectory based on its value. -->
+  <!--因此，DistributionDir是命令行变量，我们根据其值设置DistributionDirectory。-->
+
+  <Choose>
+    <When Condition=" '$(DistributionDir)' == ''">
+      <PropertyGroup>
+        <DistributionDirectory>$(ProjectOutDir)</DistributionDirectory>
+        <DeletePlugins>true</DeletePlugins>
+      </PropertyGroup>
+    </When>
+    <When Condition=" '$(DistributionDir)' != '$(ProjectOutDir)' ">
+      <PropertyGroup>
+        <DistributionDirectory>$(DistributionDir)</DistributionDirectory>
+        <DeletePlugins>false</DeletePlugins>
+      </PropertyGroup>
+    </When>
+  </Choose>
+
+  <Choose>
+    <When Condition="'$(Options)' == ''">
+      <PropertyGroup>
+        <OptionsFlags>None</OptionsFlags>
+      </PropertyGroup>
+    </When>
+    <Otherwise>
+      <PropertyGroup>
+        <OptionsFlags>$(Options)</OptionsFlags>
+      </PropertyGroup>
+    </Otherwise>
+  </Choose>
+
+  <PropertyGroup>
+    <CommonDirectory>$(DistributionDirectory)\common</CommonDirectory>
+    <PluginsDirectory>$(DistributionDirectory)\plugins</PluginsDirectory>
+    <LogDirectory>$(DistributionDirectory)\logs</LogDirectory>
+    <ManifestDirectory>$(DistributionDirectory)\manifest</ManifestDirectory>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <DestinationDirectories Include="$(DistributionDirectory)" />
+    <DestinationDirectories Include="$(CommonDirectory)" />
+    <DestinationDirectories Include="$(PluginsDirectory)" />
+    <DestinationDirectories Include="$(LogDirectory)" />
+    <DestinationDirectories Include="$(ManifestDirectory)" />
+  </ItemGroup>
+
+  <!-- Config files, to be placed in distribution directory -->
+  <!--配置文件，放在分发目录中-->
+  <ItemGroup>
+    <ConfigFiles Include="$(ProjectDir)\Logging.config" />
+  </ItemGroup>
+
+  <!-- License files -->
+  <!--许可证文件 -->
+  <ItemGroup>
+    <LicenseFiles Include="$(ProjectDir)\..\..\License.rtf" />
+  </ItemGroup>
+
+  <!-- Shared library files, to be placed in common directory -->
+  <!--共享库文件，放在公共目录中 -->
+  <ItemGroup>
+    <SharedLibraryFiles Include="$(ProjectDir)\..\..\Common\bin\$(Configuration)\ClearCanvas.Common.dll" />
+    <SharedLibraryFiles Include="$(ProjectDir)\..\..\ReferencedAssemblies\log4net.dll" />
+    <SharedLibraryFiles Include="$(ProjectDir)\..\..\ReferencedAssemblies\DotNetMagic2005.DLL" />
+  </ItemGroup>
+  <ItemGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <SharedLibraryFiles Include="$(ProjectDir)\..\..\ReferencedAssemblies\nunit.framework.dll" />
+  </ItemGroup>
+
+  <!-- Shared plugin files, to be placed in plugin directory -->
+  <!--共享插件文件，放在插件目录中-->
+  <ItemGroup>
+    <SharedPluginFiles Include="$(ProjectDir)\..\..\Desktop\bin\$(Configuration)\ClearCanvas.Desktop.dll" />
+    <SharedPluginFiles Include="$(ProjectDir)\..\..\Desktop\View\WinForms\bin\$(Configuration)\ClearCanvas.Desktop.View.WinForms.dll" />
+    <SharedPluginFiles Include="$(ProjectDir)\..\..\Desktop\Help\bin\$(Configuration)\ClearCanvas.Desktop.Help.dll" />
+    <SharedPluginFiles Include="$(ProjectDir)\..\..\Utilities\Manifest\bin\$(Configuration)\ClearCanvas.Utilities.Manifest.dll" />
+  </ItemGroup>
+ 
+  <!-- Extension Browser plugin files -->
+  <!--扩展浏览器插件文件-->
+  <ItemGroup>
+    <ExtensionBrowserPlugin Include="$(ProjectDir)\..\..\Desktop\ExtensionBrowser\bin\$(Configuration)\ClearCanvas.Desktop.ExtensionBrowser.dll" />
+    <ExtensionBrowserPlugin Include="$(ProjectDir)\..\..\Desktop\ExtensionBrowser\View\WinForms\bin\$(Configuration)\ClearCanvas.Desktop.ExtensionBrowser.View.WinForms.dll" />
+  </ItemGroup>
+
+  <!--Icon Files-->
+  <!--图标文件-->
+  <ItemGroup>
+    <IconFiles Include="$(ProjectDir)\app.ico" />
+  </ItemGroup>
+
+  <!-- Execution files -->
+  <!--执行文件-->
+  <ItemGroup>
+    <ExecutionFiles Include="$(ProjectDir)\bin\$(Configuration)\ClearCanvas.Desktop.Executable.exe" />
+    <ExecutionFiles Include="$(ProjectDir)\bin\$(Configuration)\ClearCanvas.Desktop.Executable.exe.config" />
+  </ItemGroup>
+
+  <!-- Plugin files -->
+  <!--插件文件-->
+  <ItemGroup>
+    <PluginDeleteFiles Include="$(PluginsDirectory)\*.*" />
+  </ItemGroup>
+
+  <!-- Re-signs the desktop executable's strong name if modified for PE flags after strong name is originally applied -->
+  <!--如果在最初应用强名称后修改了PE标记，则重新签名桌面可执行文件的强名称-->
+  <Target Name="ReSignExeSN" Condition="'$(StrongNameKeyFile)' != '' and Exists('$(StrongNameKeyFile)')">
+    <!-- Do not strong name plugin launcher executables due to side effect of forcing all same-version launchers to use the same user config regardless of location -->
+    <!--由于强制所有相同版本的启动器使用相同的用户配置而不考虑位置的副作用，请不要使用强名称插件启动程序可执行文件-->
+  </Target>
+
+  <!--将CIL桌面可执行文件标记为需要32位执行，即使在64位计算机上也是如此-->
+  <Target Name="SetExeX86Flag">
+    <GetFrameworkSdkPath>
+      <Output TaskParameter="Path" PropertyName="SdkPath" />
+    </GetFrameworkSdkPath>
+    <CreateProperty Value="$(registry:HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SDKs\Windows\@CurrentInstallFolder)" Condition="'$(SdkPath)' == ''">
+      <Output TaskParameter="Value" PropertyName="SdkPath" />
+    </CreateProperty>
+    <CreateProperty Value="$(SdkPath)\" Condition="!HasTrailingSlash('$(SdkPath)')">
+      <Output TaskParameter="Value" PropertyName="SdkPath" />
+    </CreateProperty>
+    <Exec Command="corflags /Force /32BIT+ &quot;$(DistributionDirectory)\ClearCanvas.Desktop.Executable.exe&quot;" WorkingDirectory="$(SdkPath)bin\" />
+  </Target>
+
+  <!-- Flags the CIL desktop executable as capable of handling extended process memory space ("large addresses") if the OS is configured to do so -->
+  <!--如果操作系统配置为执行此操作，则将CIL桌面可执行文件标记为能够处理扩展进程内存空间（“大地址”）-->
+  <Target Name="SetExeLAAFlag">
+    <!-- The 64-bit version of editbin can be run directly from VC\bin\amd64 -->
+    <!--可以直接从VC\bin\amd64运行64位版本的editbin-->
+    <Exec Condition="'$(BuildPlatform)' == 'x64'"
+          Command="editbin /LARGEADDRESSAWARE &quot;$(DistributionDirectory)\ClearCanvas.Desktop.Executable.exe&quot;"
+          WorkingDirectory="$(VS100COMNTOOLS)\..\..\VC\bin\amd64" />
+    <!-- The 32-bit version of editbin has a dependency in Common7\IDE, hence the weird use of both WorkdingDirectory and a full command path -->
+    <!--editbin的32位版本在Common7IDE中具有依赖性，因此使用WorkdingDirectory和完整的命令路径都很奇怪-->
+    <Exec Condition="'$(BuildPlatform)' != 'x64'"
+          Command="&quot;$(VS100COMNTOOLS)..\..\VC\bin\editbin&quot; /LARGEADDRESSAWARE &quot;$(DistributionDirectory)\ClearCanvas.Desktop.Executable.exe&quot;"
+          WorkingDirectory="$(VS100COMNTOOLS)\..\IDE" />
+  </Target>
+
+  <Target Name="Copy App Icon">
+    <!-- Copy icon file -->
+    <!--复制图标文件--> 
+    <Copy SkipUnchangedFiles="true" SourceFiles="@(IconFiles)" DestinationFolder="$(DistributionDirectory)" ContinueOnError="true"/>
+  </Target>
+
+  <Target Name="Disable Logging">
+    <!-- Disables logging -->
+    <!--禁用日志记录-->
+    <RemoveDir Directories="$(LogDirectory)" />
+    <Delete Files="$(DistributionDirectory)\Logging.config" />
+  </Target>
+  
+  <Target Name="Copy Files">
+
+    <!-- Make required directories -->
+    <!-- 制作必需的目录-->
+    <MakeDir Directories="@(DestinationDirectories)" ContinueOnError="true" />
+
+    <!-- Delete contents of plugin directory -->
+    <!--删除插件目录的内容-->
+    <Delete Condition="$(DeletePlugins)" Files="@(PluginDeleteFiles)" ContinueOnError="true" />
+
+    <!-- Copy shared config files -->
+    <!-- 复制共享配置文件--> 
+    <Copy SourceFiles="@(ConfigFiles)" DestinationFolder="$(DistributionDirectory)" ContinueOnError="true"/>
+
+    <!-- Copy License.rtf -->
+    <!--复制License.rtf-->
+    <Copy SkipUnchangedFiles="true" SourceFiles="@(LicenseFiles)" DestinationFolder="$(DistributionDirectory)" ContinueOnError="true"/>
+
+    <!-- Copy shared libraries -->
+    <!--复制共享库--> 
+    <Copy SourceFiles="@(SharedLibraryFiles)" DestinationFolder="$(CommonDirectory)" />
+
+    <!-- Copy shared plugins -->
+    <!-- 复制共享插件 -->
+    <Copy SourceFiles="@(SharedPluginFiles)" DestinationFolder="$(PluginsDirectory)" />
+    
+    <!-- Evaluate desktop executable specific build options -->
+    <!--评估桌面可执行特定的构建选项-->
+    <RegexIsMatch Pattern="ExcludeExtensionBrowser" Input="$(OptionsFlags)" >
+      <Output TaskParameter="IsMatch" PropertyName="ExcludeExtensionBrowser" />
+    </RegexIsMatch>
+    
+    <!-- Copy Extension Browser plugins-->
+    <!--复制扩展浏览器插件-->
+    <Copy SourceFiles="@(ExtensionBrowserPlugin)" DestinationFolder="$(PluginsDirectory)" Condition="!$(ExcludeExtensionBrowser)" />
+
+    <!-- Copy execution files -->
+    <!-- 复制执行文件-->
+    <Copy SkipUnchangedFiles="true" SourceFiles="@(ExecutionFiles)" DestinationFolder="$(DistributionDirectory)" />
+  </Target>
+  
+  <Target Name="Copy Desktop Executable Files">
+    <!-- Evaluate desktop executable specific build options -->
+    <!-- 评估桌面可执行特定的构建选项 -->
+    <RegexIsMatch Pattern="DisableLogging" Input="$(OptionsFlags)" >
+      <Output TaskParameter="IsMatch" PropertyName="DisableLogging" />
+    </RegexIsMatch>
+    <RegexIsMatch Pattern="IncludeApplicationIcon" Input="$(OptionsFlags)" >
+      <Output TaskParameter="IsMatch" PropertyName="IncludeApplicationIcon" />
+    </RegexIsMatch>
+    <RegexIsMatch Pattern="SetDesktopExecutableX86Flag" Input="$(OptionsFlags)" >
+      <Output TaskParameter="IsMatch" PropertyName="SetDesktopExecutableX86Flag" />
+    </RegexIsMatch>
+    <RegexIsMatch Pattern="SetDesktopExecutableLAAFlag" Input="$(OptionsFlags)" >
+      <Output TaskParameter="IsMatch" PropertyName="SetDesktopExecutableLAAFlag" />
+    </RegexIsMatch>
+    
+    <!-- Copy core desktop executable files -->
+    <!-- 复制核心桌面可执行文件 -->
+    <CallTarget Targets="Copy Files" />
+
+    <!-- Copy optional components -->
+    <!--复制可选组件-->
+    <CallTarget Condition="$(IncludeApplicationIcon)" Targets="Copy App Icon" />
+    
+    <!-- Disables logging if desired -->
+    <!-- 如果需要，禁用日志记录-->
+    <CallTarget Condition="$(DisableLogging)" Targets="Disable Logging" />
+
+    <!-- Set executable header flags -->
+    <!-- 设置可执行标头标志-->
+    <CallTarget Condition="$(SetDesktopExecutableX86Flag)" Targets="SetExeX86Flag" />
+    <CallTarget Condition="$(SetDesktopExecutableLAAFlag)" Targets="SetExeLAAFlag" />
+    <CallTarget Condition="$(SetDesktopExecutableX86Flag) or $(SetDesktopExecutableLAAFlag)" Targets="ReSignExeSN" />
+
+    <!-- Override the value of TargetPlatform for this task. -->
+    <!--覆盖此任务的TargetPlatform值。-->
+    <CreateProperty Value="$(BuildPlatform)" Condition=" '$(TargetPlatform)' == '' ">
+      <Output TaskParameter="Value" PropertyName="TargetPlatform" />
+    </CreateProperty>
+
+    <!-- Run the solution specific build file -->
+    <!--运行解决方案特定的构建文件-->
+    <MSBuild Projects="$(SolutionDir)\$(SolutionName)_dist.proj" Properties="SolutionDir=$(SolutionDir);SolutionName=$(SolutionName);TargetPlatform=$(TargetPlatform);Configuration=$(Configuration);ProjectName=$(ProjectName);ProjectOutDir=$(ProjectOutDir);StrongNameKeyFile=$(StrongNameKeyFile);DistributionDirectory=$(DistributionDirectory);CommonDirectory=$(CommonDirectory);PluginsDirectory=$(PluginsDirectory);LogDirectory=$(LogDirectory);Options=$(Options);Localizations=$(Localizations);ReleaseType=$(ReleaseType)" />
+  </Target>
+
+  <Target Name="Default Target">
+    <RegexIsMatch Pattern="ExcludeDesktopExecutable" Input="$(OptionsFlags)" >
+      <Output TaskParameter="IsMatch" PropertyName="ExcludeDesktopExecutable" />
+    </RegexIsMatch>
+    
+    <CallTarget Condition="!$(ExcludeDesktopExecutable)" Targets="Copy Desktop Executable Files" />
+  </Target>
+</Project>

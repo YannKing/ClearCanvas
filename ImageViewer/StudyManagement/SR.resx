@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ColumnActivityDescription" xml:space="preserve">
+    <value>活动描述</value>
+    <comment>Activity</comment>
+  </data>
+  <data name="ColumnPatient" xml:space="preserve">
+    <value>患者</value>
+    <comment>Patient</comment>
+  </data>
+  <data name="ColumnPriority" xml:space="preserve">
+    <value>优先</value>
+    <comment>Priority</comment>
+  </data>
+  <data name="ColumnProgress" xml:space="preserve">
+    <value>进展</value>
+    <comment>Progress</comment>
+  </data>
+  <data name="ColumnRequestedTime" xml:space="preserve">
+    <value>请求的时间</value>
+    <comment>Requested Time</comment>
+  </data>
+  <data name="ColumnScheduledTime" xml:space="preserve">
+    <value>计划的时间</value>
+    <comment>Scheduled Time</comment>
+  </data>
+  <data name="ColumnStatus" xml:space="preserve">
+    <value>状态</value>
+    <comment>Status</comment>
+  </data>
+  <data name="ColumnStatusDescription" xml:space="preserve">
+    <value>状态细节</value>
+    <comment>Status Details</comment>
+  </data>
+  <data name="ColumnStudy" xml:space="preserve">
+    <value>检查</value>
+    <comment>Study</comment>
+  </data>
+  <data name="DescriptionMaximumDiskUsageExceeded" xml:space="preserve">
+    <value>磁盘使用率高于最大值。工作站将无法导入DICOM文件或通过网络接收它们。你应该删除旧的研究腾出空间，或增加最大用量。</value>
+    <comment>Disk usage is above the maximum. The Workstation will not be able to import
+DICOM files or receive them over the network. You should delete old studies to
+make room, or increase the maximum usage.</comment>
+  </data>
+  <data name="DiskspaceTemplate" xml:space="preserve">
+    <value>{0} of {1} ({2}%)</value>
+    <comment>{0} of {1} ({2}%)</comment>
+  </data>
+  <data name="LinkOpenActivityMonitor" xml:space="preserve">
+    <value>打开活动监视器</value>
+    <comment>Open Activity Monitor</comment>
+  </data>
+  <data name="LinkOpenStorageConfiguration" xml:space="preserve">
+    <value>打开存储配置</value>
+    <comment>Open Storage Configuration</comment>
+  </data>
+  <data name="MenuActivityMonitor" xml:space="preserve">
+    <value>活动监视器</value>
+    <comment>Activity Monitor</comment>
+  </data>
+  <data name="MenuDeleteWorkItem" xml:space="preserve">
+    <value>删除</value>
+    <comment>Delete</comment>
+  </data>
+  <data name="MenuReindex" xml:space="preserve">
+    <value>重新索引文件存储</value>
+    <comment>Re-index File Store</comment>
+  </data>
+  <data name="MenuRestartWorkItem" xml:space="preserve">
+    <value>重启</value>
+    <comment>Restart</comment>
+  </data>
+  <data name="MenuStatWorkItem" xml:space="preserve">
+    <value>制作统计</value>
+    <comment>Make Stat</comment>
+  </data>
+  <data name="MenuStopWorkItem" xml:space="preserve">
+    <value>停止</value>
+    <comment>Stop</comment>
+  </data>
+  <data name="MessageConfirmCancelWorkItems" xml:space="preserve">
+    <value>取消选定的工作项可能会导致部分研究数据，这可能会导致患者误诊。你确定要取消？</value>
+    <comment>Canceling the selected work item(s) may result in partial study data, which could potentially lead to patient misdiagnosis.  Are you sure you want to cancel?</comment>
+  </data>
+  <data name="MessageFailedToOpenImages" xml:space="preserve">
+    <value>无法打开所选图像。</value>
+    <comment>Failed to open the selected images.</comment>
+  </data>
+  <data name="MessageFailedToOpenStudy" xml:space="preserve">
+    <value>无法打开所选研究。</value>
+    <comment>Failed to open the selected studies.</comment>
+  </data>
+  <data name="MessageFailedToStartReindex" xml:space="preserve">
+    <value>无法启动重新索引。</value>
+    <comment>Failed to start re-index.</comment>
+  </data>
+  <data name="MessageFilestoreDirectoryDoesNotExist" xml:space="preserve">
+    <value>当前配置的文件存储目录不存在。</value>
+    <comment>The currently configured file store directory does not exist.</comment>
+  </data>
+  <data name="MessageLoadStudiesBeingProcessed" xml:space="preserve">
+    <value>您选择的一些研究正在处理中。它们可能不完整或包含过时的信息。你还想继续吗？</value>
+    <comment>Some of the studies you selected are being processed. They may be incomplete or contain out-of-date information. Do you still want to continue?</comment>
+  </data>
+  <data name="MessageLoadStudyBeingProcessed" xml:space="preserve">
+    <value>您选择的研究正在处理中。它可能不完整或包含过时的信息。你还想继续吗？</value>
+    <comment>The study you selected is being processed. It may be incomplete or contain out-of-date information. Do you still want to continue?</comment>
+  </data>
+  <data name="MessageLocalServerNotRunning" xml:space="preserve">
+    <value>必须运行本地服务器才能完成此操作</value>
+    <comment>The Local Server must be running in order to complete this operation.</comment>
+  </data>
+  <data name="MessageMaximumDiskUsageExceeded" xml:space="preserve">
+    <value>超出最大磁盘使用量</value>
+    <comment>Maximum disk usage exceeded</comment>
+  </data>
+  <data name="MessageNonStudyWorkItemFailed" xml:space="preserve">
+    <value>{0} 失败.</value>
+    <comment>{0} failed.</comment>
+  </data>
+  <data name="MessageOneFailedWorkItem" xml:space="preserve">
+    <value>有1个失败的工作项目。</value>
+    <comment>There is 1 failed work item.</comment>
+  </data>
+  <data name="MessageProcessedItemsProgress" xml:space="preserve">
+    <value>处理 {1} 中 {0} 项....</value>
+    <comment>Processed {0} of {1} items...</comment>
+  </data>
+  <data name="MessageReindexInProgress" xml:space="preserve">
+    <value>重新索引操作已在进行中。</value>
+    <comment>A re-index operation is already in progress.</comment>
+  </data>
+  <data name="MessageReindexScheduled" xml:space="preserve">
+    <value>已经安排了重新索引。</value>
+    <comment>The re-index has been scheduled.</comment>
+  </data>
+  <data name="MessageReindexServiceNotRunning" xml:space="preserve">
+    <value>必须运行该服务才能启动重新索引。</value>
+    <comment>The service must be running to start a re-index.</comment>
+  </data>
+  <data name="MessageTotalFailedWorkItems" xml:space="preserve">
+    <value>有{0}个失败的工作项。</value>
+    <comment>There are {0} failed work items.</comment>
+  </data>
+  <data name="MessageWorkItemFailed" xml:space="preserve">
+    <value>{1} [{2}，A＃：{3}]的{0}失败。</value>
+    <comment>{0} for {1} [{2}, A#:{3}] failed.</comment>
+  </data>
+  <data name="NoFilterItem" xml:space="preserve">
+    <value>(all)</value>
+  </data>
+  <data name="StatusFilterValueActive" xml:space="preserve">
+    <value>活动</value>
+    <comment>Active</comment>
+  </data>
+  <data name="StatusFilterValueComplete" xml:space="preserve">
+    <value>完成</value>
+    <comment>Complete</comment>
+  </data>
+  <data name="StatusFilterValueFailed" xml:space="preserve">
+    <value>失败</value>
+    <comment>Failed</comment>
+  </data>
+  <data name="StatusFilterValueStopped" xml:space="preserve">
+    <value>已停止</value>
+    <comment>Stopped</comment>
+  </data>
+  <data name="TitleActivityMonitor" xml:space="preserve">
+    <value>活动监视器</value>
+    <comment>Activity Monitor</comment>
+  </data>
+  <data name="TooltipActivityMonitor" xml:space="preserve">
+    <value>活动监视器</value>
+    <comment>Activity Monitor</comment>
+  </data>
+  <data name="TooltipDeleteWorkItem" xml:space="preserve">
+    <value>删除所选工作项</value>
+    <comment>Delete selected work item(s)</comment>
+  </data>
+  <data name="TooltipRestartWorkItem" xml:space="preserve">
+    <value>重新启动选定的工作项</value>
+    <comment>Restart selected work item(s)</comment>
+  </data>
+  <data name="TooltipStatWorkItem" xml:space="preserve">
+    <value>将所选工作项的优先级提高到“Stat”</value>
+    <comment>Raise priority of selected work item(s) to 'Stat'</comment>
+  </data>
+  <data name="TooltipStopWorkItem" xml:space="preserve">
+    <value>停止选定的工作项目</value>
+    <comment>Stop selected work item(s)</comment>
+  </data>
+  <data name="WarningActivityMonitorPermission" xml:space="preserve">
+    <value>您无权打开活动监视器。</value>
+    <comment>You do not have permission to open the Activity Monitor.</comment>
+  </data>
+  <data name="WarningMaximumDiskUsageExceeded" xml:space="preserve">
+    <value>已超出最大磁盘使用量。其他设备将无法将研究发送到工作站。</value>
+    <comment>Maximum disk usage has been exceeded.  Other devices will not be able to send studies to the workstation.</comment>
+  </data>
+  <data name="WarningReindexPermission" xml:space="preserve">
+    <value>您无权启动重新索引。</value>
+    <comment>You do not have permission to start a re-index.</comment>
+  </data>
+</root>

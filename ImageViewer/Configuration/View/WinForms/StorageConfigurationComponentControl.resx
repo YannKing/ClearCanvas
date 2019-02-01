@@ -1,0 +1,1183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_maxDiskSpace.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
+  </data>
+  <data name="tableLayoutPanel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="_changeFileStore.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
+  </data>
+  <data name="_changeFileStore.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="_changeFileStore.Location" type="System.Drawing.Point, System.Drawing">
+    <value>389, 3</value>
+  </data>
+  <data name="_changeFileStore.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 21</value>
+  </data>
+  <data name="_changeFileStore.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="_changeFileStore.Text" xml:space="preserve">
+    <value>浏览</value>
+  </data>
+  <data name="&gt;&gt;_changeFileStore.Name" xml:space="preserve">
+    <value>_changeFileStore</value>
+  </data>
+  <data name="&gt;&gt;_changeFileStore.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_changeFileStore.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;_changeFileStore.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_fileStoreDirectory.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
+  </data>
+  <data name="_fileStoreDirectory.Location" type="System.Drawing.Point, System.Drawing">
+    <value>69, 3</value>
+  </data>
+  <data name="_fileStoreDirectory.Size" type="System.Drawing.Size, System.Drawing">
+    <value>294, 21</value>
+  </data>
+  <data name="_fileStoreDirectory.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;_fileStoreDirectory.Name" xml:space="preserve">
+    <value>_fileStoreDirectory</value>
+  </data>
+  <data name="&gt;&gt;_fileStoreDirectory.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_fileStoreDirectory.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;_fileStoreDirectory.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_usedDiskSpaceDisplay.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
+  </data>
+  <data name="_usedDiskSpaceDisplay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>389, 71</value>
+  </data>
+  <data name="_usedDiskSpaceDisplay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 21</value>
+  </data>
+  <data name="_usedDiskSpaceDisplay.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;_usedDiskSpaceDisplay.Name" xml:space="preserve">
+    <value>_usedDiskSpaceDisplay</value>
+  </data>
+  <data name="&gt;&gt;_usedDiskSpaceDisplay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_usedDiskSpaceDisplay.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;_usedDiskSpaceDisplay.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="_upDownMaxDiskSpace.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
+  </data>
+  <data name="_upDownMaxDiskSpace.Location" type="System.Drawing.Point, System.Drawing">
+    <value>299, 100</value>
+  </data>
+  <data name="_upDownMaxDiskSpace.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 21</value>
+  </data>
+  <data name="_upDownMaxDiskSpace.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;_upDownMaxDiskSpace.Name" xml:space="preserve">
+    <value>_upDownMaxDiskSpace</value>
+  </data>
+  <data name="&gt;&gt;_upDownMaxDiskSpace.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_upDownMaxDiskSpace.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;_upDownMaxDiskSpace.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="_maxDiskSpaceDisplay.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
+  </data>
+  <data name="_maxDiskSpaceDisplay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>389, 100</value>
+  </data>
+  <data name="_maxDiskSpaceDisplay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 21</value>
+  </data>
+  <data name="_maxDiskSpaceDisplay.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;_maxDiskSpaceDisplay.Name" xml:space="preserve">
+    <value>_maxDiskSpaceDisplay</value>
+  </data>
+  <data name="&gt;&gt;_maxDiskSpaceDisplay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_maxDiskSpaceDisplay.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;_maxDiskSpaceDisplay.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="_diskSpaceWarningIcon.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="_diskSpaceWarningIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABHklEQVQ4T2PAB86tU/sPwlAuaeDiFvP/
+        13ar/L9/TPs/iA0VJh6cXSP+//MLDzAGsaHCxAGY7b+/BILx3WM6pLkCZjvMABD7/DoJ4gwA2XRzv9r/
+        39+iQRrAmCRXINsO5ILxrw/exIUFyAZQqIM0gDBQCIx/vvMEY4IxArLh2yt3sGaQBqAQxIBXrmD8/Ykd
+        blfAbP/xzB6sEIQLM2TAGMYHYayueHShCRzKX26bgPHXmwb/v1zWgGAoHywGlQepBemBaofY/uSwIljD
+        pzOK/z+ekAbTQCkwBrE/X1SDGwpSC3fF/VNFYBNhGj8cEoVjmAEfj0qA5WAYpBYUFiC9YNtfnlQFK0LW
+        TAjDXXF1t/v/lT38ZGGQXrA3yAcMDAD4G4SYYSB31AAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="_diskSpaceWarningIcon.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_diskSpaceWarningIcon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>47, 130</value>
+  </data>
+  <data name="_diskSpaceWarningIcon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>16, 16</value>
+  </data>
+  <data name="_diskSpaceWarningIcon.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>AutoSize</value>
+  </data>
+  <data name="_diskSpaceWarningIcon.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;_diskSpaceWarningIcon.Name" xml:space="preserve">
+    <value>_diskSpaceWarningIcon</value>
+  </data>
+  <data name="&gt;&gt;_diskSpaceWarningIcon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_diskSpaceWarningIcon.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;_diskSpaceWarningIcon.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="_totalDiskSpaceDisplay.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="_totalDiskSpaceDisplay.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_totalDiskSpaceDisplay.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_totalDiskSpaceDisplay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>222, 56</value>
+  </data>
+  <data name="_totalDiskSpaceDisplay.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 9, 0</value>
+  </data>
+  <data name="_totalDiskSpaceDisplay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 12</value>
+  </data>
+  <data name="_totalDiskSpaceDisplay.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="_totalDiskSpaceDisplay.Text" xml:space="preserve">
+    <value>总磁盘空间</value>
+  </data>
+  <data name="_totalDiskSpaceDisplay.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_totalDiskSpaceDisplay.Name" xml:space="preserve">
+    <value>_totalDiskSpaceDisplay</value>
+  </data>
+  <data name="&gt;&gt;_totalDiskSpaceDisplay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_totalDiskSpaceDisplay.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;_totalDiskSpaceDisplay.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="label4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>370, 104</value>
+  </data>
+  <data name="label4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>11, 12</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>%</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="label5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>370, 75</value>
+  </data>
+  <data name="label5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>11, 12</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>%</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="label1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 68</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 26</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>磁盘使用情况：</value>
+  </data>
+  <data name="label1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="label2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 94</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 33</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>最大磁盘使用量：</value>
+  </data>
+  <data name="label2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="_usedDiskSpace.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
+  </data>
+  <data name="_usedDiskSpace.Location" type="System.Drawing.Point, System.Drawing">
+    <value>299, 71</value>
+  </data>
+  <data name="_usedDiskSpace.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 21</value>
+  </data>
+  <data name="_usedDiskSpace.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;_usedDiskSpace.Name" xml:space="preserve">
+    <value>_usedDiskSpace</value>
+  </data>
+  <data name="&gt;&gt;_usedDiskSpace.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_usedDiskSpace.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;_usedDiskSpace.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="label8.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 2</value>
+  </data>
+  <data name="label8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 24</value>
+  </data>
+  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>文件保存位置：</value>
+  </data>
+  <data name="label8.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="_usedSpaceMeter.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
+  </data>
+  <data name="_usedSpaceMeter.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="_usedSpaceMeter.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_usedSpaceMeter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>75, 72</value>
+  </data>
+  <data name="_usedSpaceMeter.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>9, 3, 9, 3</value>
+  </data>
+  <data name="_usedSpaceMeter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>212, 18</value>
+  </data>
+  <data name="_usedSpaceMeter.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;_usedSpaceMeter.Name" xml:space="preserve">
+    <value>_usedSpaceMeter</value>
+  </data>
+  <data name="&gt;&gt;_usedSpaceMeter.Type" xml:space="preserve">
+    <value>ClearCanvas.Desktop.View.WinForms.Meter, ClearCanvas.Desktop.View.WinForms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;_usedSpaceMeter.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;_usedSpaceMeter.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="_diskSpaceWarningMessage.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_diskSpaceWarningMessage.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="_diskSpaceWarningMessage.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="_diskSpaceWarningMessage.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_diskSpaceWarningMessage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>69, 132</value>
+  </data>
+  <data name="_diskSpaceWarningMessage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 5, 3, 0</value>
+  </data>
+  <data name="_diskSpaceWarningMessage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 22</value>
+  </data>
+  <data name="_diskSpaceWarningMessage.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="_diskSpaceWarningMessage.Text" xml:space="preserve">
+    <value>don't translate me</value>
+  </data>
+  <data name="&gt;&gt;_diskSpaceWarningMessage.Name" xml:space="preserve">
+    <value>_diskSpaceWarningMessage</value>
+  </data>
+  <data name="&gt;&gt;_diskSpaceWarningMessage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_diskSpaceWarningMessage.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;_diskSpaceWarningMessage.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="_fileStoreWarningIcon.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="_fileStoreWarningIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABHklEQVQ4T2PAB86tU/sPwlAuaeDiFvP/
+        13ar/L9/TPs/iA0VJh6cXSP+//MLDzAGsaHCxAGY7b+/BILx3WM6pLkCZjvMABD7/DoJ4gwA2XRzv9r/
+        39+iQRrAmCRXINsO5ILxrw/exIUFyAZQqIM0gDBQCIx/vvMEY4IxArLh2yt3sGaQBqAQxIBXrmD8/Ykd
+        blfAbP/xzB6sEIQLM2TAGMYHYayueHShCRzKX26bgPHXmwb/v1zWgGAoHywGlQepBemBaofY/uSwIljD
+        pzOK/z+ekAbTQCkwBrE/X1SDGwpSC3fF/VNFYBNhGj8cEoVjmAEfj0qA5WAYpBYUFiC9YNtfnlQFK0LW
+        TAjDXXF1t/v/lT38ZGGQXrA3yAcMDAD4G4SYYSB31AAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="_fileStoreWarningIcon.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_fileStoreWarningIcon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>47, 28</value>
+  </data>
+  <data name="_fileStoreWarningIcon.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 0, 3, 3</value>
+  </data>
+  <data name="_fileStoreWarningIcon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>16, 16</value>
+  </data>
+  <data name="_fileStoreWarningIcon.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>AutoSize</value>
+  </data>
+  <data name="_fileStoreWarningIcon.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;_fileStoreWarningIcon.Name" xml:space="preserve">
+    <value>_fileStoreWarningIcon</value>
+  </data>
+  <data name="&gt;&gt;_fileStoreWarningIcon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_fileStoreWarningIcon.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;_fileStoreWarningIcon.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="_fileStoreWarningMessage.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="_fileStoreWarningMessage.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="_fileStoreWarningMessage.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_fileStoreWarningMessage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>69, 30</value>
+  </data>
+  <data name="_fileStoreWarningMessage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 0</value>
+  </data>
+  <data name="_fileStoreWarningMessage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 23</value>
+  </data>
+  <data name="_fileStoreWarningMessage.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="_fileStoreWarningMessage.Text" xml:space="preserve">
+    <value>don't translate me</value>
+  </data>
+  <data name="&gt;&gt;_fileStoreWarningMessage.Name" xml:space="preserve">
+    <value>_fileStoreWarningMessage</value>
+  </data>
+  <data name="&gt;&gt;_fileStoreWarningMessage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_fileStoreWarningMessage.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;_fileStoreWarningMessage.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="_helpIcon.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="_helpIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAABEhJREFUWEfV
+        Vj1rFFEUnUorrbRSf4E/QCQIiZsuGBESsLKInyApDEYIggEVTCNIIFpEBBFSWCVuYtwY0Lhq/IwfmA1+
+        DSjogIVbWExhcbzn5d7ZNy+TGNHGAwfHmXfPOXPnvreJ/kv0zWFj7z00Ha9iD8lr3tPH/x6D77G+awp7
+        Ois4d2wWtf7HSIYXkFx5g/qQcPA1Et47VEWNaw7OoJ01Wv53OFJFs4he7H+EhauvkVY/I332Fen8tzx5
+        73aMdEQC9T/AAmv2T6FJZf4cPTPY0lFBH9+s8gn1J9/zrIohTUleh89HP6J+4j4SalBLZVeH7ptY2zaB
+        y6ceI6Z55QvqMwGtEy6AXIfPWaMhYmpRU+VXxoE72MyCYfmuFMgoQcrS4loC1FMsQf0HMCfPXGChXzv4
+        HEnbGC5TW22WR8cE+rrvIr72QYbsLerkiJBC899RYJ0HO8K1rLF6au2fRkxttSlGRxnNsjDhVHPKyWvK
+        0Dz9udiJNIjE+/wkVmc61Nx3B3FnGdvVLo+u+1jXMi7TLoMzIIM3IG1j61g49FK8RNjAa078qHaGb62P
+        HOI6wDpH0aAWNTmU9KCX2jbQNo72zim8OPsMseMrxOeFLBwRE9V25uV3SDkjwyJs/34MOmSm1CBNt30a
+        s/RS2wZKN3GaLep5hPikRxaxhU++yfYScsKHni4Olk+eBertYIa+FrX3TSGml9o2UJrEHB8erspCo1ds
+        gueN+mYkDx/1dfjyA2nOWPWo7QKIl9ouYlcZG1qnUds7g1qX8LB0guwhpegkyRBGLwjngFvQYJ+INZmx
+        6lGbHq23UKOn2kdRywS28eZuhhByIXn0IWouhNCFEFoIM1ffDNwB/XeRWB01TI/m9KAXPdU+iuRGW2tZ
+        HhaFEFo3shBCzkES2HMOuIsKzUWT2vRgAHqqvQQY8wIIXQANwQBZJzQAOR9sPW5LvjmfmTlrXQDRcgFU
+        f0mAllH5BEEA60IugNAC+AcQZyAzLwhgelkA8aKn2kdRM4dQbjJZGMBC+AEGpM3q7VCVt7dgts4F1/qi
+        APRU+0WUbmDOAtgcWIiwC2fu5YevIgdVztxvvwbwvz+91LaBUhmnswBCP0AYonsSCUOQ7ogNpj40dwFU
+        1wUQL7VtwA3iJGaXBFguBH+0eNwKbZeY+YoBxINeattA0xjWSbILhV0IQtDM34LcfqGxTb5vTtKDXmqb
+        R2kcOxggC+GJ+CH45uqdgdOfmQszc1L1XPvFQ+2KIRPayyGxIj+EBeF3V18HHr8WwF/rm7shF221WR47
+        y9gkCy/5n4L0hWlkv372t4H/nPRrXVdFk9pqszK2XscaFuQ6YfRM7EcmMyWD9frml6ip8quDdqI37MSf
+        UN+8d9VvXgQOjdsd3D4qWmRG2nOuZc1vB2614Lbh3uUBoi11x2lmqP/nM67h2vblttq/AM9x9wPGw0vI
+        6yVn+/+BKPoFGkGQ4cnTf/0AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="_helpIcon.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_helpIcon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>429, 127</value>
+  </data>
+  <data name="_helpIcon.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 0, 3, 3</value>
+  </data>
+  <data name="_helpIcon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 22</value>
+  </data>
+  <data name="_helpIcon.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="_helpIcon.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;_helpIcon.Name" xml:space="preserve">
+    <value>_helpIcon</value>
+  </data>
+  <data name="&gt;&gt;_helpIcon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_helpIcon.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;_helpIcon.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 6</value>
+  </data>
+  <data name="tableLayoutPanel1.RowCount" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>461, 160</value>
+  </data>
+  <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Name" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="_changeFileStore" Row="0" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="_fileStoreDirectory" Row="0" RowSpan="1" Column="1" ColumnSpan="3" /&gt;&lt;Control Name="_usedDiskSpaceDisplay" Row="3" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="_upDownMaxDiskSpace" Row="4" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="_maxDiskSpaceDisplay" Row="4" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="_diskSpaceWarningIcon" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="_totalDiskSpaceDisplay" Row="2" RowSpan="1" Column="1" ColumnSpan="2" /&gt;&lt;Control Name="label4" Row="4" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="label5" Row="3" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="label1" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label2" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="_maxDiskSpace" Row="4" RowSpan="1" Column="1" ColumnSpan="2" /&gt;&lt;Control Name="_usedDiskSpace" Row="3" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="label8" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="_usedSpaceMeter" Row="3" RowSpan="1" Column="1" ColumnSpan="2" /&gt;&lt;Control Name="_diskSpaceWarningMessage" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="_fileStoreWarningIcon" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="_fileStoreWarningMessage" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="_helpIcon" Row="5" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,66,Percent,100,Absolute,32,Absolute,70,Absolute,20,Absolute,70,Absolute,5" /&gt;&lt;Rows Styles="Absolute,28,Absolute,25,Absolute,15,Absolute,26,Absolute,33,Absolute,27,Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="_maxDiskSpace.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_maxDiskSpace.Location" type="System.Drawing.Point, System.Drawing">
+    <value>67, 100</value>
+  </data>
+  <data name="_maxDiskSpace.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 6, 1, 0</value>
+  </data>
+  <data name="_maxDiskSpace.Size" type="System.Drawing.Size, System.Drawing">
+    <value>228, 27</value>
+  </data>
+  <data name="_maxDiskSpace.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_maxDiskSpace.Name" xml:space="preserve">
+    <value>_maxDiskSpace</value>
+  </data>
+  <data name="&gt;&gt;_maxDiskSpace.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_maxDiskSpace.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;_maxDiskSpace.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="_tooltip.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>17, 17</value>
+  </data>
+  <data name="_localServiceControlLink.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_localServiceControlLink.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_localServiceControlLink.Location" type="System.Drawing.Point, System.Drawing">
+    <value>345, 0</value>
+  </data>
+  <data name="_localServiceControlLink.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 1, 0, 0</value>
+  </data>
+  <data name="_localServiceControlLink.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 13</value>
+  </data>
+  <data name="_localServiceControlLink.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="_localServiceControlLink.Text" xml:space="preserve">
+    <value>Stop Local Service</value>
+  </data>
+  <data name="_localServiceControlLink.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
+  <data name="&gt;&gt;_localServiceControlLink.Name" xml:space="preserve">
+    <value>_localServiceControlLink</value>
+  </data>
+  <data name="&gt;&gt;_localServiceControlLink.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_localServiceControlLink.Parent" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;_localServiceControlLink.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tableLayoutPanel2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="tableLayoutPanel2.ColumnCount" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="_deleteStudiesCheck.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="_deleteStudiesCheck.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_deleteStudiesCheck.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_deleteStudiesCheck.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 6</value>
+  </data>
+  <data name="_deleteStudiesCheck.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 0, 3</value>
+  </data>
+  <data name="_deleteStudiesCheck.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 16</value>
+  </data>
+  <data name="_deleteStudiesCheck.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="_deleteStudiesCheck.Text" xml:space="preserve">
+    <value>删除检查</value>
+  </data>
+  <data name="&gt;&gt;_deleteStudiesCheck.Name" xml:space="preserve">
+    <value>_deleteStudiesCheck</value>
+  </data>
+  <data name="&gt;&gt;_deleteStudiesCheck.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_deleteStudiesCheck.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;_deleteStudiesCheck.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_deleteTimeValue.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="_deleteTimeValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>78, 4</value>
+  </data>
+  <data name="_deleteTimeValue.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 3</value>
+  </data>
+  <data name="_deleteTimeValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 21</value>
+  </data>
+  <data name="_deleteTimeValue.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="_deleteTimeValue.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;_deleteTimeValue.Name" xml:space="preserve">
+    <value>_deleteTimeValue</value>
+  </data>
+  <data name="&gt;&gt;_deleteTimeValue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_deleteTimeValue.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;_deleteTimeValue.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_deleteTimeUnits.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="_deleteTimeUnits.Location" type="System.Drawing.Point, System.Drawing">
+    <value>141, 4</value>
+  </data>
+  <data name="_deleteTimeUnits.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 20</value>
+  </data>
+  <data name="_deleteTimeUnits.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;_deleteTimeUnits.Name" xml:space="preserve">
+    <value>_deleteTimeUnits</value>
+  </data>
+  <data name="&gt;&gt;_deleteTimeUnits.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_deleteTimeUnits.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;_deleteTimeUnits.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>224, 8</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 12</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>收到/导入后</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="_studyDeletionValidationPlaceholder.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="_studyDeletionValidationPlaceholder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>301, 0</value>
+  </data>
+  <data name="_studyDeletionValidationPlaceholder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 45</value>
+  </data>
+  <data name="_studyDeletionValidationPlaceholder.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="_studyDeletionValidationPlaceholder.Text" xml:space="preserve">
+    <value> don't translate</value>
+  </data>
+  <data name="_studyDeletionValidationPlaceholder.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_studyDeletionValidationPlaceholder.Name" xml:space="preserve">
+    <value>_studyDeletionValidationPlaceholder</value>
+  </data>
+  <data name="&gt;&gt;_studyDeletionValidationPlaceholder.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_studyDeletionValidationPlaceholder.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;_studyDeletionValidationPlaceholder.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="tableLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 18</value>
+  </data>
+  <data name="tableLayoutPanel2.RowCount" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="tableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>449, 45</value>
+  </data>
+  <data name="tableLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.Name" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.Parent" xml:space="preserve">
+    <value>_studyDeletion</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="_deleteStudiesCheck" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="_deleteTimeValue" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="_deleteTimeUnits" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="label3" Row="0" RowSpan="1" Column="3" ColumnSpan="2" /&gt;&lt;Control Name="label6" Row="1" RowSpan="1" Column="0" ColumnSpan="4" /&gt;&lt;Control Name="_studyDeletionValidationPlaceholder" Row="0" RowSpan="2" Column="5" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,Percent,100,Absolute,26" /&gt;&lt;Rows Styles="AutoSize,0,AutoSize,0,Absolute,9" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 28</value>
+  </data>
+  <data name="label6.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 5, 0, 0</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 17</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>注意：所做的更改将应用于现有检查。</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="_infoMessage.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_infoMessage.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="_infoMessage.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_infoMessage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 2</value>
+  </data>
+  <data name="_infoMessage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 0</value>
+  </data>
+  <data name="_infoMessage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 13</value>
+  </data>
+  <data name="_infoMessage.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="_infoMessage.Text" xml:space="preserve">
+    <value>don't translate me</value>
+  </data>
+  <data name="&gt;&gt;_infoMessage.Name" xml:space="preserve">
+    <value>_infoMessage</value>
+  </data>
+  <data name="&gt;&gt;_infoMessage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_infoMessage.Parent" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;_infoMessage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_studyDeletion.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="_studyDeletion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 172</value>
+  </data>
+  <data name="_studyDeletion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>461, 72</value>
+  </data>
+  <data name="_studyDeletion.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_studyDeletion.Text" xml:space="preserve">
+    <value>自动删除检查</value>
+  </data>
+  <data name="&gt;&gt;_studyDeletion.Name" xml:space="preserve">
+    <value>_studyDeletion</value>
+  </data>
+  <data name="&gt;&gt;_studyDeletion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_studyDeletion.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_studyDeletion.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanel3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="tableLayoutPanel3.ColumnCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tableLayoutPanel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 246</value>
+  </data>
+  <data name="tableLayoutPanel3.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>461, 30</value>
+  </data>
+  <data name="tableLayoutPanel3.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel3.Name" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanel3.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="_infoMessage" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="_localServiceControlLink" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100,AutoSize,0" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="$this.Localizable" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>467, 280</value>
+  </data>
+  <data name="&gt;&gt;_tooltip.Name" xml:space="preserve">
+    <value>_tooltip</value>
+  </data>
+  <data name="&gt;&gt;_tooltip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>StorageConfigurationComponentControl</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>ClearCanvas.Desktop.View.WinForms.ApplicationComponentUserControl, ClearCanvas.Desktop.View.WinForms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+</root>

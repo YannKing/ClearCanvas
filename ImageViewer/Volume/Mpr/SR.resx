@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="MenuOpenWithMpr" xml:space="preserve">
+    <value>打开＆MPR ...</value>
+    <comment>Open with &amp;MPR...</comment>
+  </data>
+  <data name="MessageBuildingMprVolume" xml:space="preserve">
+    <value>建立MPR卷......</value>
+    <comment>0 - Overall Progress --Building MPR Volume...</comment>
+  </data>
+  <data name="FormatMprDisplaySetName" xml:space="preserve">
+    <value>MPR ({0})</value>
+    <comment>0 - Slice Plane Description -- MPR ({0})</comment>
+  </data>
+  <data name="MenuOpenSelectionWithMpr" xml:space="preserve">
+    <value>用＆MPR打开选择</value>
+    <comment>Open Selection with &amp;MPR</comment>
+  </data>
+  <data name="MenuVolume" xml:space="preserve">
+    <value>&amp;卷</value>
+    <comment>&amp;Volume</comment>
+  </data>
+  <data name="ToolbarOpenSelectionWithMpr" xml:space="preserve">
+    <value>用＆MPR打开选择</value>
+    <comment>Open Selection with MPR</comment>
+  </data>
+  <data name="FormatSliceCustom" xml:space="preserve">
+    <value>(X{0:f0}° x Y{1:f0}° x Z{2:f0}°)</value>
+    <comment>0 - Slice Plane Rotation About X Axis, 1 - ... About Y Axis, 2 - ... About Z Axis -- (X{0:f0}° x Y{1:f0}° x Z{2:f0}°)</comment>
+  </data>
+  <data name="FormatSliceIdentity" xml:space="preserve">
+    <value>Identity</value>
+    <comment>0 - Slice Plane Rotation About X Axis, 1 - ... About Y Axis, 2 - ... About Z Axis --Identity</comment>
+  </data>
+  <data name="FormatSliceOrthogonalX" xml:space="preserve">
+    <value>OrthoX</value>
+    <comment>0 - Slice Plane Rotation About X Axis, 1 - ... About Y Axis, 2 - ... About Z Axis --OrthoX</comment>
+  </data>
+  <data name="FormatSliceOrthogonalY" xml:space="preserve">
+    <value>OrthoY</value>
+    <comment>0 - Slice Plane Rotation About X Axis, 1 - ... About Y Axis, 2 - ... About Z Axis --OrthoY</comment>
+  </data>
+  <data name="ThreePlane" xml:space="preserve">
+    <value>3 层面</value>
+    <comment>3 Plane</comment>
+  </data>
+  <data name="FormatVolumeLabel" xml:space="preserve">
+    <value>{0} - {1}</value>
+    <comment>0 - Patient Name, 1 - Patient ID, 2 - Series Description</comment>
+  </data>
+  <data name="FormatVolumeLabelWithSeries" xml:space="preserve">
+    <value>{2} ({0} - {1})</value>
+    <comment>0 - Patient Name, 1 - Patient ID, 2 - Series Description</comment>
+  </data>
+  <data name="VolumeLabelSeparator" xml:space="preserve">
+    <value>::</value>
+    <comment>::</comment>
+  </data>
+  <data name="MessageBuildingMprVolumeProgress" xml:space="preserve">
+    <value>构建MPR卷（{2}的第{1}帧）...</value>
+    <comment>0 - Overall Progress, 1 - Current Frame Number, 2 - Total Frames, 3 - Volume Frame Progress  --Building MPR Volume (Frame {1} of {2})...</comment>
+  </data>
+  <data name="MessageDone" xml:space="preserve">
+    <value>完成！</value>
+    <comment>0 - Overall Progress --Done!</comment>
+  </data>
+  <data name="MessageInitializingMpr" xml:space="preserve">
+    <value>正在初始化 mpr..。</value>
+    <comment>0 - Overall Progress --Initializing MPR...</comment>
+  </data>
+  <data name="MessagePerformingMprWorkspaceLayout" xml:space="preserve">
+    <value>正在执行 mpr 工作区布局..。</value>
+    <comment>0 - Overall Progress --Performing MPR Workspace Layout...</comment>
+  </data>
+  <data name="ExceptionMprLoadFailure" xml:space="preserve">
+    <value>无法在MPR中加载所选图像</value>
+    <comment>Unable to load the selected images in MPR</comment>
+  </data>
+  <data name="FormatMprWorkspaceTitle" xml:space="preserve">
+    <value>MPR {0}</value>
+    <comment>0 - Volume Label  -- MPR {0}</comment>
+  </data>
+  <data name="MenuReslice" xml:space="preserve">
+    <value>重新切片 MPR</value>
+    <comment>Reslice MPR</comment>
+  </data>
+  <data name="MenuResliceFor" xml:space="preserve">
+    <value>重新切片 {0}</value>
+    <comment>0 - Name of Display Set --Reslice {0}</comment>
+  </data>
+  <data name="ToolbarReslice" xml:space="preserve">
+    <value>重新切片 MPR</value>
+    <comment>Reslice MPR</comment>
+  </data>
+  <data name="ToolbarResliceFor" xml:space="preserve">
+    <value>重新切片 {0}</value>
+    <comment>Reslice {0}</comment>
+  </data>
+  <data name="MenuMpr" xml:space="preserve">
+    <value>&amp;MPR</value>
+    <comment>&amp;MPR</comment>
+  </data>
+  <data name="ToolbarMpr" xml:space="preserve">
+    <value>MPR</value>
+    <comment>MPR</comment>
+  </data>
+  <data name="MessageUnsupportedDicomImageSop" xml:space="preserve">
+    <value>文件不是一个有效的、受支持的 dicom 映像 sop 实例。{0}</value>
+    <comment>0 - Filename --File is not a valid, supported DICOM image SOP instance. {0}</comment>
+  </data>
+  <data name="Mpr" xml:space="preserve">
+    <value>MPR</value>
+    <comment>MPR</comment>
+  </data>
+  <data name="MenuDebug" xml:space="preserve">
+    <value>&amp;调试</value>
+    <comment>&amp;Debug</comment>
+  </data>
+  <data name="MenuResetAll" xml:space="preserve">
+    <value>&amp;重置 MPR</value>
+    <comment>&amp;Reset MPR</comment>
+  </data>
+  <data name="ToolbarResetAll" xml:space="preserve">
+    <value>重置 MPR</value>
+    <comment>Reset MPR</comment>
+  </data>
+  <data name="TooltipResetAll" xml:space="preserve">
+    <value>重置所有 mpr 切片视图</value>
+    <comment>Resets all MPR slice views</comment>
+  </data>
+  <data name="MessageValidateSliceSpacing" xml:space="preserve">
+    <value>切片间距必须大于或等于 0.5, 并且小于或等于10。</value>
+    <comment>Slice spacing must be greater than or equal to 0.5 and less than or equal to 10.</comment>
+  </data>
+  <data name="CommandMprMove" xml:space="preserve">
+    <value>移动 MPR</value>
+    <comment>Move MPR</comment>
+  </data>
+  <data name="CommandMprReset" xml:space="preserve">
+    <value>重置 MPR</value>
+    <comment>Reset MPR</comment>
+  </data>
+  <data name="CommandMprReslice" xml:space="preserve">
+    <value>重新切片 MPR</value>
+    <comment>Reslice MPR</comment>
+  </data>
+</root>

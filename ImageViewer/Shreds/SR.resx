@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DicomServer" xml:space="preserve">
+    <value>DICOM 服务</value>
+    <comment>DICOM Server</comment>
+  </data>
+  <data name="DicomServerDescription" xml:space="preserve">
+    <value>这将承载 dicom 服务器和 wcf dicom服务</value>
+    <comment>This shred hosts the DICOM Server and the WCF DICOM Server service</comment>
+  </data>
+  <data name="DiskspaceManager" xml:space="preserve">
+    <value>磁盘空间管理器</value>
+    <comment>Diskspace Manager</comment>
+  </data>
+  <data name="DiskspaceManagerDescription" xml:space="preserve">
+    <value>此碎片承载磁盘空间管理器服务</value>
+    <comment>This shred hosts the Diskspace Manager service</comment>
+  </data>
+  <data name="ExceptionNoFilesHaveBeenSpecifiedToImport" xml:space="preserve">
+    <value>尚未指定要导入的文件。</value>
+    <comment>No files have been specified to import.</comment>
+  </data>
+  <data name="ExceptionInvalidFilesHaveBeenSpecifiedToImport" xml:space="preserve">
+    <value>指定用于导入的文件将不再可访问。</value>
+    <comment>Files specified for import are no longer accessible.</comment>
+  </data>
+  <data name="ExceptionServiceHasBeenDisabled" xml:space="preserve">
+    <value>无法处理请求。该服务已被禁用。</value>
+    <comment>Unable to process request. The service has been disabled.</comment>
+  </data>
+  <data name="FormatEnumeratingFile" xml:space="preserve">
+    <value>枚举: {0}</value>
+    <comment>Enumerating: {0}</comment>
+  </data>
+  <data name="FormatMultipleFilesDescription" xml:space="preserve">
+    <value>+ {0}</value>
+    <comment>+ {0}</comment>
+  </data>
+  <data name="FormatServiceFailedToStart" xml:space="preserve">
+    <value>{0} 服务无法启动。 有关详细信息, 请查看日志。</value>
+    <comment>The {0} service has failed to start.  Please check the log for more details.</comment>
+  </data>
+  <data name="FormatServiceStartedSuccessfully" xml:space="preserve">
+    <value>{0} 服务已成功启动。</value>
+    <comment>The {0} service has started successfully.</comment>
+  </data>
+  <data name="FormatServiceStoppedSuccessfully" xml:space="preserve">
+    <value>{0} 服务已成功停止。</value>
+    <comment>The {0} service has stopped successfully.</comment>
+  </data>
+  <data name="FormatWCFServiceFailedToStart" xml:space="preserve">
+    <value>{0} wcf 服务无法启动。 有关详细信息, 请查看日志。</value>
+    <comment>The {0} WCF service has failed to start.  Please check the log for more details.</comment>
+  </data>
+  <data name="FormatWCFServiceStartedSuccessfully" xml:space="preserve">
+    <value>{0} wcf 服务已成功启动。</value>
+    <comment>The {0} WCF service has started successfully.</comment>
+  </data>
+  <data name="FormatWCFServiceStoppedSuccessfully" xml:space="preserve">
+    <value>{0} wcf 服务已成功停止。</value>
+    <comment>The {0} WCF service has stopped successfully.</comment>
+  </data>
+  <data name="MessageNoFilesToImport" xml:space="preserve">
+    <value>完成。 找不到要导入的文件。</value>
+    <comment>Complete.  No files could be found to import.</comment>
+  </data>
+  <data name="MessageNoFilesToReindex" xml:space="preserve">
+    <value>完成。 找不到要重新编制索引的文件。</value>
+    <comment>Complete.  No files could be found to reindex.</comment>
+  </data>
+  <data name="ExceptionErrorProcessingInsert" xml:space="preserve">
+    <value>无法处理工作项插入请求。</value>
+    <comment>Failed to process WorkItem Insert request.</comment>
+  </data>
+  <data name="ExceptionErrorProcessingQuery" xml:space="preserve">
+    <value>无法处理工作项查询请求。</value>
+    <comment>Failed to process WorkItem Query request.</comment>
+  </data>
+  <data name="ExceptionErrorProcessingSubscribe" xml:space="preserve">
+    <value>处理工作项订阅请求失败。</value>
+    <comment>Failed to process WorkItem Subscribe request.</comment>
+  </data>
+  <data name="ExceptionErrorProcessingUnsubscribe" xml:space="preserve">
+    <value>无法处理工作项取消订阅请求。</value>
+    <comment>Failed to process WorkItem Unsubscribe request.</comment>
+  </data>
+  <data name="ExceptionErrorProcessingUpdate" xml:space="preserve">
+    <value>无法处理工作项更新请求。</value>
+    <comment>Failed to process WorkItem Update request.</comment>
+  </data>
+  <data name="WorkItemService" xml:space="preserve">
+    <value>Work Item 工作项</value>
+    <comment>Work Item</comment>
+  </data>
+  <data name="WorkItemServiceDescription" xml:space="preserve">
+    <value>承载工作项服务宿主</value>
+    <comment>Hosts the WorkItem Services</comment>
+  </data>
+  <data name="WorkItemProcessorDescription" xml:space="preserve">
+    <value>承载工作项处理器服务宿主</value>
+    <comment>Hosts the WorkItem Processor Service</comment>
+  </data>
+  <data name="WorkItemProcessorService" xml:space="preserve">
+    <value>Work Item 处理器</value>
+    <comment>Work Item Processor</comment>
+  </data>
+  <data name="ExceptionErrorRestartingDICOMServer" xml:space="preserve">
+    <value>重新启动 dicom 服务器时出错。</value>
+    <comment>Error restarting DICOM server.</comment>
+  </data>
+  <data name="WorkItemActivityMonitorService" xml:space="preserve">
+    <value>工作项活动监视器</value>
+    <comment>Work Item Activity Monitor</comment>
+  </data>
+  <data name="InternalError" xml:space="preserve">
+    <value>内部错误。</value>
+    <comment>Internal error.</comment>
+  </data>
+  <data name="ExceptionErrorProcessingPublish" xml:space="preserve">
+    <value>无法处理工作项发布请求。</value>
+    <comment>Failed to process WorkItem Publish request.</comment>
+  </data>
+  <data name="ExceptionErrorProcessingRefresh" xml:space="preserve">
+    <value>无法处理工作项刷新请求。</value>
+    <comment>Failed to process WorkItem Refresh request.</comment>
+  </data>
+  <data name="FilestoreManagementShred" xml:space="preserve">
+    <value>文件管理处理器</value>
+    <comment>Filestore Management Processor</comment>
+  </data>
+  <data name="ExceptionNotEnoughStorage" xml:space="preserve">
+    <value>磁盘使用率超过了配置的最大使用量。</value>
+    <comment>Disk usage exceeds maximum configured usage.</comment>
+  </data>
+  <data name="ImportFailedPartialStudies" xml:space="preserve">
+    <value>{0}. 可能导入的研究不完整, 请参阅日志文件以了解详细信息。</value>
+    <comment>{0}.  There may be incomplete imported studies, see the log file for details.</comment>
+  </data>
+</root>

@@ -1,0 +1,1311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AnnotationItemProviders_Dicom_CTImage_DisplayName" xml:space="preserve">
+    <value>Dicom (CT 影像)</value>
+    <comment>Dicom (CT Image)</comment>
+  </data>
+  <data name="AnnotationItemProviders_Dicom_GeneralEquipment_DisplayName" xml:space="preserve">
+    <value>dicom (通用设备)</value>
+    <comment>Dicom (General Equipment)</comment>
+  </data>
+  <data name="AnnotationItemProviders_Dicom_GeneralImage_DisplayName" xml:space="preserve">
+    <value>Dicom（一般图像）</value>
+    <comment>Dicom (General Image)</comment>
+  </data>
+  <data name="AnnotationItemProviders_Dicom_GeneralSeries_DisplayName" xml:space="preserve">
+    <value>Dicom（一般序列）</value>
+    <comment>Dicom (General Series)</comment>
+  </data>
+  <data name="AnnotationItemProviders_Dicom_GeneralStudy_DisplayName" xml:space="preserve">
+    <value>Dicom（一般检查）</value>
+    <comment>Dicom (General Study)</comment>
+  </data>
+  <data name="AnnotationItemProviders_Dicom_ImagePlane_DisplayName" xml:space="preserve">
+    <value>Dicom（图像平面）</value>
+    <comment>Dicom (Image Plane)</comment>
+  </data>
+  <data name="AnnotationItemProviders_Dicom_MRImage_DisplayName" xml:space="preserve">
+    <value>Dicom (MR 图像)</value>
+    <comment>Dicom (MR Image)</comment>
+  </data>
+  <data name="AnnotationItemProviders_Dicom_Patient_DisplayName" xml:space="preserve">
+    <value>Dicom (患者)</value>
+    <comment>Dicom (Patient)</comment>
+  </data>
+  <data name="AnnotationItemProviders_Dicom_PatientStudy_DisplayName" xml:space="preserve">
+    <value>Dicom (患者 / 检查)</value>
+    <comment>Dicom (Patient / Study)</comment>
+  </data>
+  <data name="AnnotationItemProviders_Presentation_DisplayName" xml:space="preserve">
+    <value>介绍</value>
+    <comment>Presentation</comment>
+  </data>
+  <data name="Dicom_CTImage_ConvolutionKernel_DisplayName" xml:space="preserve">
+    <value>Convolution Kernel</value>
+    <comment>Convolution Kernel</comment>
+  </data>
+  <data name="Dicom_CTImage_ConvolutionKernel_Label" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Dicom_CTImage_ExposureTime_DisplayName" xml:space="preserve">
+    <value>曝光时间</value>
+    <comment>Exposure Time</comment>
+  </data>
+  <data name="Dicom_CTImage_ExposureTime_Label" xml:space="preserve">
+    <value>Exp Time</value>
+    <comment>Exp Time</comment>
+  </data>
+  <data name="Dicom_CTImage_GantryDetectorTilt_DisplayName" xml:space="preserve">
+    <value>龙门倾斜</value>
+    <comment>Gantry Tilt</comment>
+  </data>
+  <data name="Dicom_CTImage_GantryDetectorTilt_Label" xml:space="preserve">
+    <value>Tilt</value>
+    <comment>Tilt</comment>
+  </data>
+  <data name="Dicom_CTImage_KVP_DisplayName" xml:space="preserve">
+    <value>KVP</value>
+    <comment>KVP</comment>
+  </data>
+  <data name="Dicom_CTImage_KVP_Label" xml:space="preserve">
+    <value>KVP</value>
+    <comment>KVP</comment>
+  </data>
+  <data name="Dicom_CTImage_XRayTubeCurrent_DisplayName" xml:space="preserve">
+    <value>Tube Current</value>
+    <comment>Tube Current</comment>
+  </data>
+  <data name="Dicom_CTImage_XRayTubeCurrent_Label" xml:space="preserve">
+    <value>Tube Current</value>
+    <comment>Tube Current</comment>
+  </data>
+  <data name="Dicom_GeneralEquipment_DateOfLastCalibration_DisplayName" xml:space="preserve">
+    <value>上次校准的日期</value>
+    <comment>Date Of Last Calibration</comment>
+  </data>
+  <data name="Dicom_GeneralEquipment_DateOfLastCalibration_Label" xml:space="preserve">
+    <value>校准日期</value>
+    <comment>Calibration Date</comment>
+  </data>
+  <data name="Dicom_GeneralEquipment_DeviceSerialNumber_DisplayName" xml:space="preserve">
+    <value>设备序列号</value>
+    <comment>Device Serial Number</comment>
+  </data>
+  <data name="Dicom_GeneralEquipment_DeviceSerialNumber_Label" xml:space="preserve">
+    <value>Serial</value>
+    <comment>Serial</comment>
+  </data>
+  <data name="Dicom_GeneralEquipment_InstitutionAddress_DisplayName" xml:space="preserve">
+    <value>机构地址</value>
+    <comment>Institution Address</comment>
+  </data>
+  <data name="Dicom_GeneralEquipment_InstitutionAddress_Label" xml:space="preserve">
+    <value>Inst. Addr.</value>
+    <comment>Inst. Addr.</comment>
+  </data>
+  <data name="Dicom_GeneralEquipment_InstitutionalDepartmentName_DisplayName" xml:space="preserve">
+    <value>机构部门名称</value>
+    <comment>Institutional Department Name</comment>
+  </data>
+  <data name="Dicom_GeneralEquipment_InstitutionalDepartmentName_Label" xml:space="preserve">
+    <value>Inst. Dept. Name</value>
+    <comment>Inst. Dept. Name</comment>
+  </data>
+  <data name="Dicom_GeneralEquipment_InstitutionName_DisplayName" xml:space="preserve">
+    <value>机构名称</value>
+    <comment>Institution Name</comment>
+  </data>
+  <data name="Dicom_GeneralEquipment_InstitutionName_Label" xml:space="preserve">
+    <value>Inst. Name</value>
+    <comment>Inst. Name</comment>
+  </data>
+  <data name="Dicom_GeneralEquipment_Manufacturer_DisplayName" xml:space="preserve">
+    <value>厂商</value>
+    <comment>Manufacturer</comment>
+  </data>
+  <data name="Dicom_GeneralEquipment_Manufacturer_Label" xml:space="preserve">
+    <value>Mfr.</value>
+    <comment>Mfr.</comment>
+  </data>
+  <data name="Dicom_GeneralEquipment_ManufacturersModelName_DisplayName" xml:space="preserve">
+    <value>制造商的型号名称</value>
+    <comment>Manufacturer's Model Name</comment>
+  </data>
+  <data name="Dicom_GeneralEquipment_ManufacturersModelName_Label" xml:space="preserve">
+    <value>Mfr.'s Model</value>
+    <comment>Mfr.'s Model</comment>
+  </data>
+  <data name="Dicom_GeneralEquipment_SoftwareVersions_DisplayName" xml:space="preserve">
+    <value>软件版本</value>
+    <comment>Software Version(s)</comment>
+  </data>
+  <data name="Dicom_GeneralEquipment_SoftwareVersions_Label" xml:space="preserve">
+    <value>软件版本</value>
+    <comment>Software Version(s)</comment>
+  </data>
+  <data name="Dicom_GeneralEquipment_StationName_DisplayName" xml:space="preserve">
+    <value>站名</value>
+    <comment>Station Name</comment>
+  </data>
+  <data name="Dicom_GeneralEquipment_StationName_Label" xml:space="preserve">
+    <value>站</value>
+    <comment>Station</comment>
+  </data>
+  <data name="Dicom_GeneralEquipment_TimeOfLastCalibration_DisplayName" xml:space="preserve">
+    <value>最后校准的时间</value>
+    <comment>Time Of Last Calibration</comment>
+  </data>
+  <data name="Dicom_GeneralEquipment_TimeOfLastCalibration_Label" xml:space="preserve">
+    <value>Calib. Time</value>
+    <comment>Calib. Time</comment>
+  </data>
+  <data name="Dicom_GeneralImage_AcquisitionDate_DisplayName" xml:space="preserve">
+    <value>采集日期</value>
+    <comment>Acquisition Date</comment>
+  </data>
+  <data name="Dicom_GeneralImage_AcquisitionDate_Label" xml:space="preserve">
+    <value>Acq</value>
+    <comment>Acq</comment>
+  </data>
+  <data name="Dicom_GeneralImage_AcquisitionDateTime_DisplayName" xml:space="preserve">
+    <value>采集日期/时间</value>
+    <comment>Acquisition Date / Time</comment>
+  </data>
+  <data name="Dicom_GeneralImage_AcquisitionDateTime_Label" xml:space="preserve">
+    <value>Acq</value>
+    <comment>Acq</comment>
+  </data>
+  <data name="Dicom_GeneralImage_AcquisitionNumber_DisplayName" xml:space="preserve">
+    <value>采集编号</value>
+    <comment>Acquisition Number</comment>
+  </data>
+  <data name="Dicom_GeneralImage_AcquisitionNumber_Label" xml:space="preserve">
+    <value>Acq</value>
+    <comment>Acq</comment>
+  </data>
+  <data name="Dicom_GeneralImage_AcquisitionTime_DisplayName" xml:space="preserve">
+    <value>采集时间</value>
+    <comment>Acquisition Time</comment>
+  </data>
+  <data name="Dicom_GeneralImage_AcquisitionTime_Label" xml:space="preserve">
+    <value>Acq</value>
+    <comment>Acq</comment>
+  </data>
+  <data name="Dicom_GeneralImage_Composite_LateralityViewPosition_DisplayName" xml:space="preserve">
+    <value>图像横向和视图位置</value>
+    <comment>Image Laterality and View Position</comment>
+  </data>
+  <data name="Dicom_GeneralImage_Composite_LateralityViewPosition_Label" xml:space="preserve">
+    <value>Lat/Pos</value>
+    <comment>Lat/Pos</comment>
+  </data>
+  <data name="Dicom_GeneralImage_ContentDate_DisplayName" xml:space="preserve">
+    <value>内容日期</value>
+    <comment>Content Date</comment>
+  </data>
+  <data name="Dicom_GeneralImage_ContentDate_Label" xml:space="preserve">
+    <value>内容日期</value>
+    <comment>Content Date</comment>
+  </data>
+  <data name="Dicom_GeneralImage_ContentTime_DisplayName" xml:space="preserve">
+    <value>内容时间</value>
+    <comment>Content Time</comment>
+  </data>
+  <data name="Dicom_GeneralImage_ContentTime_Label" xml:space="preserve">
+    <value>内容时间</value>
+    <comment>Content Time</comment>
+  </data>
+  <data name="Dicom_GeneralImage_DerivationDescription_DisplayName" xml:space="preserve">
+    <value>推导说明</value>
+    <comment>Derivation Description</comment>
+  </data>
+  <data name="Dicom_GeneralImage_DerivationDescription_Label" xml:space="preserve">
+    <value>Deriv. Desc.</value>
+    <comment>Deriv. Desc.</comment>
+  </data>
+  <data name="Dicom_GeneralImage_ImageComments_DisplayName" xml:space="preserve">
+    <value>图片评论</value>
+    <comment>Image Comments</comment>
+  </data>
+  <data name="Dicom_GeneralImage_ImageComments_Label" xml:space="preserve">
+    <value>Img. Comm.</value>
+    <comment>Img. Comm.</comment>
+  </data>
+  <data name="Dicom_GeneralImage_ImageLaterality_DisplayName" xml:space="preserve">
+    <value>图像横向</value>
+    <comment>Image Laterality</comment>
+  </data>
+  <data name="Dicom_GeneralImage_ImageLaterality_Label" xml:space="preserve">
+    <value>Lat</value>
+    <comment>Lat</comment>
+  </data>
+  <data name="Dicom_GeneralImage_ImagesInAcquisition_DisplayName" xml:space="preserve">
+    <value>采集的图像</value>
+    <comment>Images In Acquisition</comment>
+  </data>
+  <data name="Dicom_GeneralImage_ImagesInAcquisition_Label" xml:space="preserve">
+    <value>Imgs. in Acq.</value>
+    <comment>Imgs. in Acq.</comment>
+  </data>
+  <data name="Dicom_GeneralImage_ImageType_DisplayName" xml:space="preserve">
+    <value>图像类型</value>
+    <comment>Image Type</comment>
+  </data>
+  <data name="Dicom_GeneralImage_ImageType_Label" xml:space="preserve">
+    <value>Img. Type</value>
+    <comment>Img. Type</comment>
+  </data>
+  <data name="Dicom_GeneralImage_InstanceNumber_DisplayName" xml:space="preserve">
+    <value>实例编号</value>
+    <comment>Instance Number</comment>
+  </data>
+  <data name="Dicom_GeneralImage_InstanceNumber_Label" xml:space="preserve">
+    <value>Im</value>
+    <comment>Im</comment>
+  </data>
+  <data name="Dicom_GeneralImage_LossyImageCompression_DisplayName" xml:space="preserve">
+    <value>有损图像压缩</value>
+    <comment>Lossy Image Compression</comment>
+  </data>
+  <data name="Dicom_GeneralImage_LossyImageCompression_Label" xml:space="preserve">
+    <value>有损</value>
+    <comment>Lossy</comment>
+  </data>
+  <data name="Dicom_GeneralImage_LossyImageCompressionRatio_DisplayName" xml:space="preserve">
+    <value>有损图像压缩比</value>
+    <comment>Lossy Image Compression Ratio</comment>
+  </data>
+  <data name="Dicom_GeneralImage_LossyImageCompressionRatio_Label" xml:space="preserve">
+    <value>Lossy Img. Comp. Ratio</value>
+    <comment>Lossy Img. Comp. Ratio</comment>
+  </data>
+  <data name="Dicom_GeneralImage_QualityControlImage_DisplayName" xml:space="preserve">
+    <value>质量控制图像</value>
+    <comment>Quality Control Image</comment>
+  </data>
+  <data name="Dicom_GeneralImage_QualityControlImage_Label" xml:space="preserve">
+    <value>质量控制</value>
+    <comment>Quality Control</comment>
+  </data>
+  <data name="Dicom_GeneralImage_ViewPosition_DisplayName" xml:space="preserve">
+    <value>查看位置</value>
+    <comment>View Position</comment>
+  </data>
+  <data name="Dicom_GeneralImage_ViewPosition_Label" xml:space="preserve">
+    <value>Pos</value>
+    <comment>Pos</comment>
+  </data>
+  <data name="Dicom_GeneralSeries_BodyPartExamined_DisplayName" xml:space="preserve">
+    <value>身体部位检查</value>
+    <comment>Body Part Examined</comment>
+  </data>
+  <data name="Dicom_GeneralSeries_BodyPartExamined_Label" xml:space="preserve">
+    <value>身体部分</value>
+    <comment>Body Part</comment>
+  </data>
+  <data name="Dicom_GeneralSeries_Laterality_DisplayName" xml:space="preserve">
+    <value>侧向(序列)</value>
+    <comment>Laterality (Series)</comment>
+  </data>
+  <data name="Dicom_GeneralSeries_Laterality_Label" xml:space="preserve">
+    <value>Lat</value>
+    <comment>Lat</comment>
+  </data>
+  <data name="Dicom_GeneralSeries_Modality_DisplayName" xml:space="preserve">
+    <value>模态</value>
+    <comment>Modality</comment>
+  </data>
+  <data name="Dicom_GeneralSeries_Modality_Label" xml:space="preserve">
+    <value>模态</value>
+    <comment>Modality</comment>
+  </data>
+  <data name="Dicom_GeneralSeries_OperatorsName_DisplayName" xml:space="preserve">
+    <value>操作员姓名</value>
+    <comment>Operator's Name</comment>
+  </data>
+  <data name="Dicom_GeneralSeries_OperatorsName_Label" xml:space="preserve">
+    <value>操作员</value>
+    <comment>Operator</comment>
+  </data>
+  <data name="Dicom_GeneralSeries_PerformedProcedureStepDescription_DisplayName" xml:space="preserve">
+    <value>执行过程步骤说明</value>
+    <comment>Performed Procedure Step Description</comment>
+  </data>
+  <data name="Dicom_GeneralSeries_PerformedProcedureStepDescription_Label" xml:space="preserve">
+    <value>Perf. Proc.</value>
+    <comment>Perf. Proc.</comment>
+  </data>
+  <data name="Dicom_GeneralSeries_PerformingPhysiciansName_DisplayName" xml:space="preserve">
+    <value>执行医生姓名</value>
+    <comment>Performing Physician's Name</comment>
+  </data>
+  <data name="Dicom_GeneralSeries_PerformingPhysiciansName_Label" xml:space="preserve">
+    <value>Perf. Phys.</value>
+    <comment>Perf. Phys.</comment>
+  </data>
+  <data name="Dicom_GeneralSeries_ProtocolName_DisplayName" xml:space="preserve">
+    <value>协议名称</value>
+    <comment>Protocol Name</comment>
+  </data>
+  <data name="Dicom_GeneralSeries_ProtocolName_Label" xml:space="preserve">
+    <value>协议名称</value>
+    <comment>Protocol Name</comment>
+  </data>
+  <data name="Dicom_GeneralSeries_SeriesDate_DisplayName" xml:space="preserve">
+    <value>Series Date</value>
+    <comment>Series Date</comment>
+  </data>
+  <data name="Dicom_GeneralSeries_SeriesDate_Label" xml:space="preserve">
+    <value>Series Date</value>
+    <comment>Series Date</comment>
+  </data>
+  <data name="Dicom_GeneralSeries_SeriesDescription_DisplayName" xml:space="preserve">
+    <value>Series Description</value>
+    <comment>Series Description</comment>
+  </data>
+  <data name="Dicom_GeneralSeries_SeriesDescription_Label" xml:space="preserve">
+    <value>Desc.</value>
+    <comment>Desc.</comment>
+  </data>
+  <data name="Dicom_GeneralSeries_SeriesNumber_DisplayName" xml:space="preserve">
+    <value>Series Number</value>
+    <comment>Series Number</comment>
+  </data>
+  <data name="Dicom_GeneralSeries_SeriesNumber_Label" xml:space="preserve">
+    <value>Se</value>
+    <comment>Se</comment>
+  </data>
+  <data name="Dicom_GeneralSeries_SeriesTime_DisplayName" xml:space="preserve">
+    <value>Series Time</value>
+    <comment>Series Time</comment>
+  </data>
+  <data name="Dicom_GeneralSeries_SeriesTime_Label" xml:space="preserve">
+    <value>Series Time</value>
+    <comment>Series Time</comment>
+  </data>
+  <data name="Dicom_GeneralStudy_AccessionNumber_DisplayName" xml:space="preserve">
+    <value>采集编号</value>
+    <comment>Accession Number</comment>
+  </data>
+  <data name="Dicom_GeneralStudy_AccessionNumber_Label" xml:space="preserve">
+    <value>Acc</value>
+    <comment>Acc</comment>
+  </data>
+  <data name="Dicom_GeneralStudy_ReferringPhysiciansName_DisplayName" xml:space="preserve">
+    <value>推荐医师</value>
+    <comment>Referring Physician</comment>
+  </data>
+  <data name="Dicom_GeneralStudy_ReferringPhysiciansName_Label" xml:space="preserve">
+    <value>Ref. Phys.</value>
+    <comment>Ref. Phys.</comment>
+  </data>
+  <data name="Dicom_GeneralStudy_StudyDate_DisplayName" xml:space="preserve">
+    <value>检查日期</value>
+    <comment>Study Date</comment>
+  </data>
+  <data name="Dicom_GeneralStudy_StudyDate_Label" xml:space="preserve">
+    <value>检查日期</value>
+    <comment>Study Date</comment>
+  </data>
+  <data name="Dicom_GeneralStudy_StudyDescription_DisplayName" xml:space="preserve">
+    <value>检查说明</value>
+    <comment>Study Description</comment>
+  </data>
+  <data name="Dicom_GeneralStudy_StudyDescription_Label" xml:space="preserve">
+    <value>Study Desc.</value>
+    <comment>Study Desc.</comment>
+  </data>
+  <data name="Dicom_GeneralStudy_StudyId_DisplayName" xml:space="preserve">
+    <value>检查ID</value>
+    <comment>Study ID</comment>
+  </data>
+  <data name="Dicom_GeneralStudy_StudyId_Label" xml:space="preserve">
+    <value>检查ID</value>
+    <comment>Study ID</comment>
+  </data>
+  <data name="Dicom_GeneralStudy_StudyTime_DisplayName" xml:space="preserve">
+    <value>检查时间</value>
+    <comment>Study Time</comment>
+  </data>
+  <data name="Dicom_GeneralStudy_StudyTime_Label" xml:space="preserve">
+    <value>检查时间</value>
+    <comment>Study Time</comment>
+  </data>
+  <data name="Dicom_ImagePlane_SliceLocation_DisplayName" xml:space="preserve">
+    <value>切片位置</value>
+    <comment>Slice Location</comment>
+  </data>
+  <data name="Dicom_ImagePlane_SliceLocation_Label" xml:space="preserve">
+    <value>Loc</value>
+    <comment>Loc</comment>
+  </data>
+  <data name="Dicom_ImagePlane_SliceThickness_DisplayName" xml:space="preserve">
+    <value>切片厚度</value>
+    <comment>Slice Thickness</comment>
+  </data>
+  <data name="Dicom_ImagePlane_SliceThickness_Label" xml:space="preserve">
+    <value>Thk</value>
+    <comment>Thk</comment>
+  </data>
+  <data name="Dicom_MRImage_AcquisitionMatrix_DisplayName" xml:space="preserve">
+    <value>采集矩阵</value>
+    <comment>Acquisition Matrix</comment>
+  </data>
+  <data name="Dicom_MRImage_AcquisitionMatrix_Label" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Dicom_MRImage_EchoNumber_DisplayName" xml:space="preserve">
+    <value>Echo Number</value>
+    <comment>Echo Number</comment>
+  </data>
+  <data name="Dicom_MRImage_EchoNumber_Label" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Dicom_MRImage_EchoTime_DisplayName" xml:space="preserve">
+    <value>Echo Time</value>
+    <comment>Echo Time</comment>
+  </data>
+  <data name="Dicom_MRImage_EchoTime_Label" xml:space="preserve">
+    <value>TE</value>
+    <comment>TE</comment>
+  </data>
+  <data name="Dicom_MRImage_EchoTrainLength_DisplayName" xml:space="preserve">
+    <value>Echo Train Length</value>
+    <comment>Echo Train Length</comment>
+  </data>
+  <data name="Dicom_MRImage_EchoTrainLength_Label" xml:space="preserve">
+    <value>ET</value>
+    <comment>ET</comment>
+  </data>
+  <data name="Dicom_MRImage_MagneticFieldStrength_DisplayName" xml:space="preserve">
+    <value>磁场强度</value>
+    <comment>Magnetic Field Strength</comment>
+  </data>
+  <data name="Dicom_MRImage_MagneticFieldStrength_Label" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Dicom_MRImage_ReceiveCoilName_DisplayName" xml:space="preserve">
+    <value>接收线圈名称</value>
+    <comment>Receive Coil Name</comment>
+  </data>
+  <data name="Dicom_MRImage_ReceiveCoilName_Label" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Dicom_MRImage_RepetitionTime_DisplayName" xml:space="preserve">
+    <value>重复时间</value>
+    <comment>Repetition Time</comment>
+  </data>
+  <data name="Dicom_MRImage_RepetitionTime_Label" xml:space="preserve">
+    <value>TR</value>
+    <comment>TR</comment>
+  </data>
+  <data name="Dicom_Patient_EthnicGroup_DisplayName" xml:space="preserve">
+    <value>族群</value>
+    <comment>Ethnic Group</comment>
+  </data>
+  <data name="Dicom_Patient_EthnicGroup_Label" xml:space="preserve">
+    <value>族群</value>
+    <comment>Ethnic Group</comment>
+  </data>
+  <data name="Dicom_Patient_PatientComments_DisplayName" xml:space="preserve">
+    <value>患者意见</value>
+    <comment>Patient Comments</comment>
+  </data>
+  <data name="Dicom_Patient_PatientComments_Label" xml:space="preserve">
+    <value>Pat. Comm.</value>
+    <comment>Pat. Comm.</comment>
+  </data>
+  <data name="Dicom_Patient_PatientId_DisplayName" xml:space="preserve">
+    <value>患者ID</value>
+    <comment>Patient ID</comment>
+  </data>
+  <data name="Dicom_Patient_PatientId_Label" xml:space="preserve">
+    <value>Pat. ID</value>
+    <comment>Pat. ID</comment>
+  </data>
+  <data name="Dicom_Patient_PatientsBirthDate_DisplayName" xml:space="preserve">
+    <value>患者的出生日期</value>
+    <comment>Patient's Birth Date</comment>
+  </data>
+  <data name="Dicom_Patient_PatientsBirthDate_Label" xml:space="preserve">
+    <value>DOB</value>
+    <comment>DOB</comment>
+  </data>
+  <data name="Dicom_Patient_PatientsBirthTime_DisplayName" xml:space="preserve">
+    <value>患者的出生时间</value>
+    <comment>Patient's Birth Time</comment>
+  </data>
+  <data name="Dicom_Patient_PatientsBirthTime_Label" xml:space="preserve">
+    <value>出生时间</value>
+    <comment>Birth Time</comment>
+  </data>
+  <data name="Dicom_Patient_PatientsName_DisplayName" xml:space="preserve">
+    <value>患者姓名</value>
+    <comment>Patient's Name</comment>
+  </data>
+  <data name="Dicom_Patient_PatientsName_Label" xml:space="preserve">
+    <value>患者姓名</value>
+    <comment>Name</comment>
+  </data>
+  <data name="Dicom_Patient_PatientsSex_DisplayName" xml:space="preserve">
+    <value>患者性别</value>
+    <comment>Patient's Sex</comment>
+  </data>
+  <data name="Dicom_Patient_PatientsSex_Label" xml:space="preserve">
+    <value>性别</value>
+    <comment>Gender</comment>
+  </data>
+  <data name="Dicom_PatientStudy_AdditionalPatientsHistory_DisplayName" xml:space="preserve">
+    <value>其他患者的历史记录</value>
+    <comment>Additional Patient's History</comment>
+  </data>
+  <data name="Dicom_PatientStudy_AdditionalPatientsHistory_Label" xml:space="preserve">
+    <value>历史</value>
+    <comment>History</comment>
+  </data>
+  <data name="Dicom_PatientStudy_Occupation_DisplayName" xml:space="preserve">
+    <value>职业</value>
+    <comment>Occupation</comment>
+  </data>
+  <data name="Dicom_PatientStudy_Occupation_Label" xml:space="preserve">
+    <value>职业</value>
+    <comment>Occupation</comment>
+  </data>
+  <data name="Dicom_PatientStudy_PatientsAge_DisplayName" xml:space="preserve">
+    <value>患者年龄</value>
+    <comment>Patient's Age</comment>
+  </data>
+  <data name="Dicom_PatientStudy_PatientsAge_Label" xml:space="preserve">
+    <value>年龄</value>
+    <comment>Age</comment>
+  </data>
+  <data name="Dicom_PatientStudy_PatientsSize_DisplayName" xml:space="preserve">
+    <value>患者报告大小</value>
+    <comment>Patient's Size</comment>
+  </data>
+  <data name="Dicom_PatientStudy_PatientsSize_Label" xml:space="preserve">
+    <value>大小</value>
+    <comment>Size</comment>
+  </data>
+  <data name="Dicom_PatientStudy_PatientsWeight_DisplayName" xml:space="preserve">
+    <value>患者报告宽</value>
+    <comment>Patient's Weight</comment>
+  </data>
+  <data name="Dicom_PatientStudy_PatientsWeight_Label" xml:space="preserve">
+    <value>重量</value>
+    <comment>Weight</comment>
+  </data>
+  <data name="ExceptionTransformedEdgeDoesNotMatch" xml:space="preserve">
+    <value>变换后的边缘没有相应的值。</value>
+    <comment>The transformed edge does not have a corresponding value.</comment>
+  </data>
+  <data name="FormatDegrees" xml:space="preserve">
+    <value>{0}°</value>
+    <comment>Do not use format specifiers here - inputs are preformatted strings!</comment>
+  </data>
+  <data name="FormatKilovolts" xml:space="preserve">
+    <value>{0} kV</value>
+    <comment>Do not use format specifiers here - inputs are preformatted strings!</comment>
+  </data>
+  <data name="FormatLateralityViewPosition" xml:space="preserve">
+    <value>{0}/{1}</value>
+  </data>
+  <data name="FormatMilliamps" xml:space="preserve">
+    <value>{0} mA</value>
+    <comment>Do not use format specifiers here - inputs are preformatted strings!</comment>
+  </data>
+  <data name="FormatMillimeters" xml:space="preserve">
+    <value>{0} mm</value>
+    <comment>Do not use format specifiers here - inputs are preformatted strings!</comment>
+  </data>
+  <data name="FormatMilliseconds" xml:space="preserve">
+    <value>{0} ms</value>
+    <comment>Do not use format specifiers here - inputs are preformatted strings!</comment>
+  </data>
+  <data name="FormatTeslas" xml:space="preserve">
+    <value>{0} T</value>
+    <comment>Do not use format specifiers here - inputs are preformatted strings!</comment>
+  </data>
+  <data name="Presentation_AppliedLut_DisplayName" xml:space="preserve">
+    <value>Lut (Applied)</value>
+    <comment>Lut (Applied)</comment>
+  </data>
+  <data name="Presentation_AppliedLut_Label" xml:space="preserve">
+    <value>Lut</value>
+    <comment>Lut</comment>
+  </data>
+  <data name="Presentation_DFOV_DisplayName" xml:space="preserve">
+    <value>显示领域试图</value>
+    <comment>Displayed Field of View</comment>
+  </data>
+  <data name="Presentation_DFOV_Label" xml:space="preserve">
+    <value>DFOV</value>
+    <comment>DFOV</comment>
+  </data>
+  <data name="Presentation_DirectionalMarkers_Bottom_DisplayName" xml:space="preserve">
+    <value>方向标记 (底部)</value>
+    <comment>Directional Marker (Bottom)</comment>
+  </data>
+  <data name="Presentation_DirectionalMarkers_Bottom_Label" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Presentation_DirectionalMarkers_Left_DisplayName" xml:space="preserve">
+    <value>方向标记 (左)</value>
+    <comment>Directional Marker (Left)</comment>
+  </data>
+  <data name="Presentation_DirectionalMarkers_Left_Label" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Presentation_DirectionalMarkers_Right_DisplayName" xml:space="preserve">
+    <value>方向标记 (右)</value>
+    <comment>Directional Marker (Right)</comment>
+  </data>
+  <data name="Presentation_DirectionalMarkers_Right_Label" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Presentation_DirectionalMarkers_Top_DisplayName" xml:space="preserve">
+    <value>方向标记 (上)</value>
+    <comment>Directional Marker (Top)</comment>
+  </data>
+  <data name="Presentation_DirectionalMarkers_Top_Label" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Presentation_DisplaySetDescription_DisplayName" xml:space="preserve">
+    <value>显示集说明</value>
+    <comment>Display Set Description</comment>
+  </data>
+  <data name="Presentation_DisplaySetDescription_Label" xml:space="preserve">
+    <value>Desc.</value>
+    <comment>Desc.</comment>
+  </data>
+  <data name="Presentation_DisplaySetNumber_DisplayName" xml:space="preserve">
+    <value>显示集编号</value>
+    <comment>Display Set Number</comment>
+  </data>
+  <data name="Presentation_DisplaySetNumber_Label" xml:space="preserve">
+    <value>Se</value>
+    <comment>Se</comment>
+  </data>
+  <data name="Presentation_Zoom_DisplayName" xml:space="preserve">
+    <value>缩放</value>
+    <comment>Zoom</comment>
+  </data>
+  <data name="Presentation_Zoom_Label" xml:space="preserve">
+    <value>缩放</value>
+    <comment>Zoom</comment>
+  </data>
+  <data name="ValueDirectionalMarkersAnterior" xml:space="preserve">
+    <value>A</value>
+    <comment>A</comment>
+  </data>
+  <data name="ValueDirectionalMarkersFoot" xml:space="preserve">
+    <value>F</value>
+    <comment>F</comment>
+  </data>
+  <data name="ValueDirectionalMarkersHead" xml:space="preserve">
+    <value>H</value>
+    <comment>H</comment>
+  </data>
+  <data name="ValueDirectionalMarkersLeft" xml:space="preserve">
+    <value>L</value>
+    <comment>L</comment>
+  </data>
+  <data name="ValueDirectionalMarkersPosterior" xml:space="preserve">
+    <value>P</value>
+    <comment>P</comment>
+  </data>
+  <data name="ValueDirectionalMarkersRight" xml:space="preserve">
+    <value>R</value>
+    <comment>R</comment>
+  </data>
+  <data name="ValueLossy" xml:space="preserve">
+    <value>有损</value>
+    <comment>LOSSY</comment>
+  </data>
+  <data name="ValueNotApplicable" xml:space="preserve">
+    <value>N/A</value>
+    <comment>N/A</comment>
+  </data>
+  <data name="Format2Dimensions" xml:space="preserve">
+    <value>{0} x {1}</value>
+    <comment>Do not use format specifiers here - inputs are preformatted strings!</comment>
+  </data>
+  <data name="Dicom_PatientStudy_Composite_PatientsAgeSex_DisplayName" xml:space="preserve">
+    <value>患者的年龄和性别</value>
+    <comment>Patient's Age and Sex</comment>
+  </data>
+  <data name="Dicom_PatientStudy_Composite_PatientsAgeSex_Label" xml:space="preserve">
+    <value>年龄/性别</value>
+    <comment>Age/Sex</comment>
+  </data>
+  <data name="AnnotationItemProviders_Dicom_DXImage_DisplayName" xml:space="preserve">
+    <value>Dicom (DX 影像)</value>
+    <comment>Dicom (DX Image)</comment>
+  </data>
+  <data name="Dicom_DXImage_AcquisitionDeviceProcessingDescription_DisplayName" xml:space="preserve">
+    <value>获取设备处理说明</value>
+    <comment>Acquisition Device Processing Description</comment>
+  </data>
+  <data name="Dicom_DXImage_AcquisitionDeviceProcessingDescription_Label" xml:space="preserve">
+    <value>处理</value>
+    <comment>Processing</comment>
+  </data>
+  <data name="Dicom_DXImage_BodyPartThickness_DisplayName" xml:space="preserve">
+    <value>身体部位厚度</value>
+    <comment>Body Part Thickness</comment>
+  </data>
+  <data name="Dicom_DXImage_BodyPartThickness_Label" xml:space="preserve">
+    <value>身体部位厚度</value>
+    <comment>Body Part Thickness</comment>
+  </data>
+  <data name="Dicom_DXImage_CassetteId_DisplayName" xml:space="preserve">
+    <value>磁带ID</value>
+    <comment>Cassette ID</comment>
+  </data>
+  <data name="Dicom_DXImage_CassetteId_Label" xml:space="preserve">
+    <value>磁带</value>
+    <comment>Cassette</comment>
+  </data>
+  <data name="Dicom_DXImage_CompressionForce_DisplayName" xml:space="preserve">
+    <value>压缩力</value>
+    <comment>Compression Force</comment>
+  </data>
+  <data name="Dicom_DXImage_CompressionForce_Label" xml:space="preserve">
+    <value>压缩力</value>
+    <comment>Compression Force</comment>
+  </data>
+  <data name="Dicom_DXImage_DetectorPrimaryAngle_DisplayName" xml:space="preserve">
+    <value>检测器主角度</value>
+    <comment>Detector Primary Angle</comment>
+  </data>
+  <data name="Dicom_DXImage_DetectorPrimaryAngle_Label" xml:space="preserve">
+    <value>检测器主角度</value>
+    <comment>Detector Primary Angle</comment>
+  </data>
+  <data name="Dicom_DXImage_Exposure_DisplayName" xml:space="preserve">
+    <value>曝光(DX)</value>
+    <comment>Exposure (DX)</comment>
+  </data>
+  <data name="Dicom_DXImage_Exposure_Label" xml:space="preserve">
+    <value>Exp</value>
+    <comment>Exp</comment>
+  </data>
+  <data name="Dicom_DXImage_FilterMaterial_DisplayName" xml:space="preserve">
+    <value>过滤材料</value>
+    <comment>Filter Material</comment>
+  </data>
+  <data name="Dicom_DXImage_FilterMaterial_Label" xml:space="preserve">
+    <value>过滤器</value>
+    <comment>Filter</comment>
+  </data>
+  <data name="Dicom_DXImage_KVP_DisplayName" xml:space="preserve">
+    <value>KVP (DX)</value>
+    <comment>KVP (DX)</comment>
+  </data>
+  <data name="Dicom_DXImage_KVP_Label" xml:space="preserve">
+    <value>KVP</value>
+    <comment>KVP</comment>
+  </data>
+  <data name="Dicom_DXImage_PlateId_DisplayName" xml:space="preserve">
+    <value>平板ID</value>
+    <comment>Plate ID</comment>
+  </data>
+  <data name="Dicom_DXImage_PlateId_Label" xml:space="preserve">
+    <value>平板</value>
+    <comment>Plate</comment>
+  </data>
+  <data name="Dicom_DXImage_PresentationIntentType_DisplayName" xml:space="preserve">
+    <value>意图介绍</value>
+    <comment>Presentation Intent</comment>
+  </data>
+  <data name="Dicom_DXImage_PresentationIntentType_Label" xml:space="preserve">
+    <value>意图</value>
+    <comment>Intent</comment>
+  </data>
+  <data name="Dicom_PatientStudy_Composite_PatientsAgeSexBirthDate_DisplayName" xml:space="preserve">
+    <value>患者的年龄、性别和出生日期</value>
+    <comment>Patient's Age, Sex and Birth Date</comment>
+  </data>
+  <data name="Dicom_PatientStudy_Composite_PatientsAgeSexBirthDate_Label" xml:space="preserve">
+    <value>年龄/性别/DOB</value>
+    <comment>Age/Sex/DOB</comment>
+  </data>
+  <data name="ValueNil" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="FormatNewtons" xml:space="preserve">
+    <value>{0} N</value>
+    <comment>Do not use format specifiers here - inputs are preformatted strings!</comment>
+  </data>
+  <data name="FormatMilliampSeconds" xml:space="preserve">
+    <value>{0} mAs</value>
+    <comment>Do not use format specifiers here - inputs are preformatted strings!</comment>
+  </data>
+  <data name="FormatCentimeters" xml:space="preserve">
+    <value>{0} cm</value>
+    <comment>Do not use format specifiers here - inputs are preformatted strings!</comment>
+  </data>
+  <data name="FormatDisplaySetNumberAndCount" xml:space="preserve">
+    <value>{0}/{1}</value>
+    <comment>{0}/{1}</comment>
+  </data>
+  <data name="FormatFrameNumberAndCount" xml:space="preserve">
+    <value>Fr: {0}/{1}</value>
+    <comment>Fr: {0}/{1}</comment>
+  </data>
+  <data name="FormatImageNumberAndCount" xml:space="preserve">
+    <value>{0}/{1}</value>
+    <comment>{0}/{1}</comment>
+  </data>
+  <data name="FormatKilograms" xml:space="preserve">
+    <value>{0} kg</value>
+    <comment>Do not use format specifiers here - inputs are preformatted strings!</comment>
+  </data>
+  <data name="FormatLossyCompressionRatio" xml:space="preserve">
+    <value>{0}({1})</value>
+    <comment>{0}({1})</comment>
+  </data>
+  <data name="FormatMeters" xml:space="preserve">
+    <value>{0} m</value>
+    <comment>Do not use format specifiers here - inputs are preformatted strings!</comment>
+  </data>
+  <data name="FormatSeriesNumberAndCount" xml:space="preserve">
+    <value>{0}/{1}</value>
+  </data>
+  <data name="FormatZoomFactor" xml:space="preserve">
+    <value>{0}x</value>
+    <comment>Do not use format specifiers here - inputs are preformatted strings!</comment>
+  </data>
+  <data name="SeparatorLossyCompressionRatio" xml:space="preserve">
+    <value>/</value>
+  </data>
+  <data name="Dicom_Patient_PatientBreed_DisplayName" xml:space="preserve">
+    <value>患者种类Breed</value>
+    <comment>Patient Breed</comment>
+  </data>
+  <data name="Dicom_Patient_PatientBreed_Label" xml:space="preserve">
+    <value>品种</value>
+    <comment>Breed</comment>
+  </data>
+  <data name="Dicom_Patient_PatientSpecies_DisplayName" xml:space="preserve">
+    <value>患者种类Species</value>
+    <comment>Patient Species</comment>
+  </data>
+  <data name="Dicom_Patient_PatientSpecies_Label" xml:space="preserve">
+    <value>种类</value>
+    <comment>Species</comment>
+  </data>
+  <data name="Dicom_Patient_ResponsibleOrganization_DisplayName" xml:space="preserve">
+    <value>主管组织</value>
+    <comment>Responsible Organization</comment>
+  </data>
+  <data name="Dicom_Patient_ResponsibleOrganization_Label" xml:space="preserve">
+    <value>主管组织</value>
+    <comment>Responsible Organization</comment>
+  </data>
+  <data name="Dicom_Patient_ResponsiblePerson_DisplayName" xml:space="preserve">
+    <value>负责人</value>
+    <comment>Responsible Person</comment>
+  </data>
+  <data name="Presentation_ImageCalibration_DisplayName" xml:space="preserve">
+    <value>图像校准</value>
+    <comment>Image Calibration</comment>
+  </data>
+  <data name="Dicom_Patient_ResponsiblePerson_Label" xml:space="preserve">
+    <value>负责人</value>
+    <comment>Responsible Person</comment>
+  </data>
+  <data name="ValueDirectionalMarkersQuadrupedCaudal" xml:space="preserve">
+    <value>Cd</value>
+    <comment>Cd</comment>
+  </data>
+  <data name="ValueDirectionalMarkersQuadrupedCranial" xml:space="preserve">
+    <value>Cr</value>
+    <comment>Cr</comment>
+  </data>
+  <data name="ValueDirectionalMarkersQuadrupedDistal" xml:space="preserve">
+    <value>Di</value>
+    <comment>Di</comment>
+  </data>
+  <data name="ValueDirectionalMarkersQuadrupedDorsal" xml:space="preserve">
+    <value>D</value>
+    <comment>D</comment>
+  </data>
+  <data name="ValueDirectionalMarkersQuadrupedLateral" xml:space="preserve">
+    <value>L</value>
+    <comment>L</comment>
+  </data>
+  <data name="ValueDirectionalMarkersQuadrupedLeft" xml:space="preserve">
+    <value>Le</value>
+    <comment>Le</comment>
+  </data>
+  <data name="ValueDirectionalMarkersQuadrupedMedial" xml:space="preserve">
+    <value>M</value>
+    <comment>M</comment>
+  </data>
+  <data name="ValueDirectionalMarkersQuadrupedPalmar" xml:space="preserve">
+    <value>Pa</value>
+    <comment>Pa</comment>
+  </data>
+  <data name="ValueDirectionalMarkersQuadrupedPlantar" xml:space="preserve">
+    <value>Pl</value>
+    <comment>Pl</comment>
+  </data>
+  <data name="ValueDirectionalMarkersQuadrupedProximal" xml:space="preserve">
+    <value>Pr</value>
+    <comment>Pr</comment>
+  </data>
+  <data name="ValueDirectionalMarkersQuadrupedRight" xml:space="preserve">
+    <value>Rt</value>
+    <comment>Rt</comment>
+  </data>
+  <data name="ValueDirectionalMarkersQuadrupedRostral" xml:space="preserve">
+    <value>R</value>
+    <comment>R</comment>
+  </data>
+  <data name="ValueDirectionalMarkersQuadrupedVentral" xml:space="preserve">
+    <value>V</value>
+    <comment>V</comment>
+  </data>
+  <data name="FormatCalibrationDetails" xml:space="preserve">
+    <value>{0} ({1})</value>
+  </data>
+  <data name="Presentation_ImageCalibration_Label" xml:space="preserve">
+    <value>校准</value>
+    <comment>Calibration</comment>
+  </data>
+  <data name="ValueActualSpacingCalibration" xml:space="preserve">
+    <value>实际的</value>
+    <comment>Actual</comment>
+  </data>
+  <data name="ValueDetectorSpacingCalibration" xml:space="preserve">
+    <value>探测仪</value>
+    <comment>Detector</comment>
+  </data>
+  <data name="ValueFiducialCalibration" xml:space="preserve">
+    <value>基准</value>
+    <comment>Fiducial</comment>
+  </data>
+  <data name="ValueGeometricCalibration" xml:space="preserve">
+    <value>几何</value>
+    <comment>Geometry</comment>
+  </data>
+  <data name="ValueMagnifiedCalibration" xml:space="preserve">
+    <value>倍率</value>
+    <comment>Magnification</comment>
+  </data>
+  <data name="ValueManualCalibration" xml:space="preserve">
+    <value>用户</value>
+    <comment>User</comment>
+  </data>
+  <data name="ValueNoCalibration" xml:space="preserve">
+    <value>值校准</value>
+    <comment>None</comment>
+  </data>
+  <data name="ValueUnknownCalibration" xml:space="preserve">
+    <value>未知</value>
+    <comment>Unknown</comment>
+  </data>
+  <data name="SeparatorSingleLine" xml:space="preserve">
+    <value>\</value>
+  </data>
+  <data name="FormatHertzPerPixel" xml:space="preserve">
+    <value>{0} Hz/px</value>
+    <comment>Do not use format specifiers here - inputs are preformatted strings!</comment>
+  </data>
+  <data name="FormatMillimetersPerSecond" xml:space="preserve">
+    <value>{0} mm/s</value>
+    <comment>Do not use format specifiers here - inputs are preformatted strings!</comment>
+  </data>
+  <data name="Dicom_CTImage_TablePosition_DisplayName" xml:space="preserve">
+    <value>工作台位置</value>
+    <comment>Table Position</comment>
+  </data>
+  <data name="Dicom_CTImage_TablePosition_Label" xml:space="preserve">
+    <value>Pos</value>
+    <comment>Pos</comment>
+  </data>
+  <data name="Dicom_CTImage_TableSpeed_DisplayName" xml:space="preserve">
+    <value>工作台速度</value>
+    <comment>Table Speed</comment>
+  </data>
+  <data name="Dicom_CTImage_TableSpeed_Label" xml:space="preserve">
+    <value>Spd</value>
+    <comment>Spd</comment>
+  </data>
+  <data name="Dicom_DXImage_ContrastBolusAgent_DisplayName" xml:space="preserve">
+    <value>Contrast/Bolus Agent (X-Ray)</value>
+    <comment>Contrast/Bolus Agent (X-Ray)</comment>
+  </data>
+  <data name="Dicom_DXImage_ContrastBolusAgent_Label" xml:space="preserve">
+    <value>Contrast/Bolus</value>
+    <comment>Contrast/Bolus</comment>
+  </data>
+  <data name="Dicom_MRImage_FlipAngle_DisplayName" xml:space="preserve">
+    <value>翻转角度</value>
+    <comment>Flip Angle</comment>
+  </data>
+  <data name="Dicom_MRImage_FlipAngle_Label" xml:space="preserve">
+    <value>翻转</value>
+    <comment>Flip</comment>
+  </data>
+  <data name="Dicom_MRImage_InversionTime_DisplayName" xml:space="preserve">
+    <value>倒装时间</value>
+    <comment>Inverstion Time</comment>
+  </data>
+  <data name="Dicom_MRImage_InversionTime_Label" xml:space="preserve">
+    <value>TI</value>
+    <comment>TI</comment>
+  </data>
+  <data name="Dicom_MRImage_NumberOfAverages_DisplayName" xml:space="preserve">
+    <value>平均数值</value>
+    <comment>Number of Averages</comment>
+  </data>
+  <data name="Dicom_MRImage_NumberOfAverages_Label" xml:space="preserve">
+    <value>#Avgs</value>
+    <comment>#Avgs</comment>
+  </data>
+  <data name="Dicom_MRImage_PixelBandwidth_DisplayName" xml:space="preserve">
+    <value>像素带宽</value>
+    <comment>Pixel Bandwidth</comment>
+  </data>
+  <data name="Dicom_MRImage_PixelBandwidth_Label" xml:space="preserve">
+    <value>BW</value>
+    <comment>BW</comment>
+  </data>
+  <data name="Dicom_MRImage_TriggerTime_DisplayName" xml:space="preserve">
+    <value>触发时间</value>
+    <comment>Trigger Time</comment>
+  </data>
+  <data name="Dicom_MRImage_TriggerTime_Label" xml:space="preserve">
+    <value>触发</value>
+    <comment>Trig</comment>
+  </data>
+  <data name="FormatTablePositionSpeed" xml:space="preserve">
+    <value>{0} ({1})</value>
+  </data>
+  <data name="Dicom_CTImage_Composite_TablePositionSpeed_DisplayName" xml:space="preserve">
+    <value>表位/速度</value>
+    <comment>Table Position/Speed</comment>
+  </data>
+  <data name="Dicom_CTImage_Composite_TablePositionSpeed_Label" xml:space="preserve">
+    <value>表</value>
+    <comment>Table</comment>
+  </data>
+  <data name="SeparatorAgeSexBirthDate" xml:space="preserve">
+    <value>/</value>
+  </data>
+  <data name="Dicom_CTImage_Exposure_DisplayName" xml:space="preserve">
+    <value>曝光(CT)</value>
+    <comment>Exposure (CT)</comment>
+  </data>
+  <data name="Dicom_CTImage_Exposure_Label" xml:space="preserve">
+    <value>Exp</value>
+    <comment>Exp</comment>
+  </data>
+  <data name="Dicom_DXImage_ExposureInMas_DisplayName" xml:space="preserve">
+    <value>Mas中曝光</value>
+    <comment>Exposure in mAs</comment>
+  </data>
+  <data name="Dicom_DXImage_ExposureInMas_Label" xml:space="preserve">
+    <value>Exp</value>
+    <comment>Exp</comment>
+  </data>
+  <data name="Dicom_DXImage_ExposureTime_DisplayName" xml:space="preserve">
+    <value>曝光时间(DX)</value>
+    <comment>Exposure Time (DX)</comment>
+  </data>
+  <data name="Dicom_DXImage_ExposureTime_Label" xml:space="preserve">
+    <value>Exp Time</value>
+    <comment>Exp Time</comment>
+  </data>
+  <data name="Dicom_DXImage_XRayTubeCurrent_DisplayName" xml:space="preserve">
+    <value>Tube Current (DX)</value>
+    <comment>Tube Current (DX)</comment>
+  </data>
+  <data name="Dicom_DXImage_XRayTubeCurrent_Label" xml:space="preserve">
+    <value>Tube Current</value>
+    <comment>Tube Current</comment>
+  </data>
+  <data name="Presentation_Lossy_DisplayName" xml:space="preserve">
+    <value>有损图像介绍</value>
+    <comment>Lossy Image Presentation</comment>
+  </data>
+  <data name="Presentation_Lossy_Label" xml:space="preserve">
+    <value>有损</value>
+    <comment>Lossy</comment>
+  </data>
+  <data name="Dicom_DXImage_PositionerPrimaryAngle_DisplayName" xml:space="preserve">
+    <value>定位器主角度</value>
+    <comment>Positioner Primary Angle</comment>
+  </data>
+  <data name="Dicom_DXImage_PositionerPrimaryAngle_Label" xml:space="preserve">
+    <value>定位器主角度</value>
+    <comment>Positioner Primary Angle</comment>
+  </data>
+  <data name="Dicom_DXImage_PositionerSecondaryAngle_DisplayName" xml:space="preserve">
+    <value>定位器二次角度</value>
+    <comment>Positioner Secondary Angle</comment>
+  </data>
+  <data name="Dicom_DXImage_PositionerSecondaryAngle_Label" xml:space="preserve">
+    <value>定位器二次角度</value>
+    <comment>Positioner Secondary Angle</comment>
+  </data>
+  <data name="Dicom_DXImage_AveragePulseWidth_DisplayName" xml:space="preserve">
+    <value>平均脉冲宽度</value>
+    <comment>Average Pulse Width</comment>
+  </data>
+  <data name="Dicom_DXImage_AveragePulseWidth_Label" xml:space="preserve">
+    <value>平均脉冲宽度</value>
+    <comment>Avg Pulse Width</comment>
+  </data>
+  <data name="Dicom_DXImage_ImageAndFluoroscopyAreaDoseProduct_DisplayName" xml:space="preserve">
+    <value>图像和荧光检查区域剂量产品</value>
+    <comment>Image and Fluoroscopy Area Dose Product</comment>
+  </data>
+  <data name="Dicom_DXImage_ImageAndFluoroscopyAreaDoseProduct_Label" xml:space="preserve">
+    <value>DAP总计</value>
+    <comment>Total DAP</comment>
+  </data>
+  <data name="FormatDecigraySquareCentimeters" xml:space="preserve">
+    <value>{0} dGy·cm²</value>
+    <comment>Do not use format specifiers here - inputs are preformatted strings!</comment>
+  </data>
+  <data name="AnnotationItemProviders_Dicom_ContrastBolus_DisplayName" xml:space="preserve">
+    <value>Dicom（对比/推注）</value>
+    <comment>Dicom (Contrast/Bolus)</comment>
+  </data>
+  <data name="Dicom_ContrastBolus_Agent_DisplayName" xml:space="preserve">
+    <value>对比度Agent</value>
+    <comment>Contrast/Bolus Agent</comment>
+  </data>
+  <data name="Dicom_ContrastBolus_Agent_Label" xml:space="preserve">
+    <value>对比度</value>
+    <comment>Contrast/Bolus</comment>
+  </data>
+  <data name="Dicom_Patient_OtherPatientIds_DisplayName" xml:space="preserve">
+    <value>其他患者ID</value>
+    <comment>Other Patient IDs</comment>
+  </data>
+  <data name="Dicom_Patient_OtherPatientIds_Label" xml:space="preserve">
+    <value>Ot. Pat. IDs</value>
+    <comment>Ot. Pat. IDs</comment>
+  </data>
+</root>

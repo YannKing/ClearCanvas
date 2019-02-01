@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="dicom_storeModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.7" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="configuration">
+          <Key>
+            <PropertyRef Name="Oid" />
+          </Key>
+          <Property Name="Oid" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Version" Type="timestamp" Precision="0" />
+          <Property Name="Name" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Value" Type="text" />
+        </EntityType>
+        <EntityType Name="device">
+          <Key>
+            <PropertyRef Name="Oid" />
+          </Key>
+          <Property Name="Oid" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Version" Type="timestamp" Precision="0" />
+          <Property Name="Name" Type="varchar" MaxLength="64" Nullable="false" />
+          <Property Name="Description" Type="varchar" MaxLength="64" />
+          <Property Name="Location" Type="varchar" MaxLength="64" />
+          <Property Name="AETitle" Type="varchar" MaxLength="64" Nullable="false" />
+          <Property Name="HostName" Type="varchar" MaxLength="64" Nullable="false" />
+          <Property Name="Port" Type="int" Nullable="false" />
+          <Property Name="StreamingHeaderPort" Type="int" />
+          <Property Name="StreamingImagePort" Type="int" />
+          <Property Name="IsPriorsServer" Type="bit" Nullable="false" />
+          <Property Name="ExtensionData" Type="text" />
+        </EntityType>
+        <EntityType Name="study">
+          <Key>
+            <PropertyRef Name="Oid" />
+          </Key>
+          <Property Name="Oid" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Version" Type="timestamp" Precision="0" />
+          <Property Name="SpecificCharacterSet" Type="varchar" MaxLength="64" />
+          <Property Name="StudyId" Type="varchar" MaxLength="16" />
+          <Property Name="StudyTimeTicks" Type="bigint" />
+          <Property Name="StudyTimeRaw" Type="varchar" MaxLength="16" />
+          <Property Name="StudyDate" Type="datetime" Precision="0" />
+          <Property Name="StudyDateRaw" Type="varchar" MaxLength="26" />
+          <Property Name="AccessionNumber" Type="varchar" MaxLength="16" />
+          <Property Name="StudyInstanceUid" Type="varchar" MaxLength="64" Nullable="false" />
+          <Property Name="StudyDescription" Type="varchar" MaxLength="64" />
+          <Property Name="ModalitiesInStudy" Type="varchar" MaxLength="4000" />
+          <Property Name="SopClassesInStudy" Type="varchar" MaxLength="4000" />
+          <Property Name="NumberOfStudyRelatedSeries" Type="int" />
+          <Property Name="NumberOfStudyRelatedInstances" Type="int" />
+          <Property Name="ProcedureCodeSequenceCodingSchemeDesignator" Type="varchar" MaxLength="16" />
+          <Property Name="ProcedureCodeSequenceCodeValue" Type="varchar" MaxLength="16" />
+          <Property Name="PatientsName" Type="varchar" MaxLength="256" />
+          <Property Name="ReferringPhysiciansName" Type="varchar" MaxLength="256" />
+          <Property Name="PatientId" Type="varchar" MaxLength="64" />
+          <Property Name="PatientsSex" Type="varchar" MaxLength="16" />
+          <Property Name="PatientsBirthDate" Type="datetime" Precision="0" />
+          <Property Name="PatientsBirthDateRaw" Type="varchar" MaxLength="16" />
+          <Property Name="PatientsBirthTimeTicks" Type="bigint" />
+          <Property Name="PatientsBirthTimeRaw" Type="varchar" MaxLength="16" />
+          <Property Name="PatientSpeciesDescription" Type="varchar" MaxLength="64" />
+          <Property Name="PatientSpeciesCodeSequenceCodingSchemeDesignator" Type="varchar" MaxLength="16" />
+          <Property Name="PatientSpeciesCodeSequenceCodeValue" Type="varchar" MaxLength="16" />
+          <Property Name="PatientSpeciesCodeSequenceCodeMeaning" Type="varchar" MaxLength="64" />
+          <Property Name="PatientBreedDescription" Type="varchar" MaxLength="64" />
+          <Property Name="PatientBreedCodeSequenceCodingSchemeDesignator" Type="varchar" MaxLength="16" />
+          <Property Name="PatientBreedCodeSequenceCodeValue" Type="varchar" MaxLength="16" />
+          <Property Name="PatientBreedCodeSequenceCodeMeaning" Type="varchar" MaxLength="64" />
+          <Property Name="ResponsiblePerson" Type="varchar" MaxLength="256" />
+          <Property Name="ResponsiblePersonRole" Type="varchar" MaxLength="16" />
+          <Property Name="ResponsibleOrganization" Type="varchar" MaxLength="64" />
+          <Property Name="SourceAETitlesInStudy" Type="varchar" MaxLength="4000" />
+          <Property Name="StationNamesInStudy" Type="varchar" MaxLength="4000" />
+          <Property Name="InstitutionNamesInStudy" Type="varchar" MaxLength="4000" />
+          <Property Name="StoreTime" Type="datetime" Precision="0" />
+          <Property Name="DeleteTime" Type="datetime" Precision="0" />
+          <Property Name="Deleted" Type="bit" Nullable="false" />
+          <Property Name="Reindex" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="workitem">
+          <Key>
+            <PropertyRef Name="Oid" />
+          </Key>
+          <Property Name="Oid" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Version" Type="timestamp" Precision="0" />
+          <Property Name="ScheduledTime" Type="datetime" Precision="0" Nullable="false" />
+          <Property Name="ExpirationTime" Type="datetime" Precision="0" Nullable="false" />
+          <Property Name="DeleteTime" Type="datetime" Precision="0" Nullable="false" />
+          <Property Name="ProcessTime" Type="datetime" Precision="0" Nullable="false" />
+          <Property Name="RequestedTime" Type="datetime" Precision="0" Nullable="false" />
+          <Property Name="Status" Type="smallint" Nullable="false" />
+          <Property Name="Type" Type="varchar" MaxLength="32" Nullable="false" />
+          <Property Name="Priority" Type="smallint" Nullable="false" />
+          <Property Name="FailureCount" Type="smallint" Nullable="false" />
+          <Property Name="StudyInstanceUid" Type="varchar" MaxLength="64" />
+          <Property Name="SerializedRequest" Type="text" />
+          <Property Name="SerializedProgress" Type="text" />
+        </EntityType>
+        <EntityType Name="workitemuid">
+          <Key>
+            <PropertyRef Name="Oid" />
+          </Key>
+          <Property Name="Oid" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Version" Type="timestamp" Precision="0" />
+          <Property Name="WorkItemOid" Type="bigint" />
+          <Property Name="SeriesInstanceUid" Type="varchar" MaxLength="64" />
+          <Property Name="SopInstanceUid" Type="varchar" MaxLength="64" />
+          <Property Name="Complete" Type="bit" Nullable="false" />
+          <Property Name="FailureCount" Type="tinyint" />
+          <Property Name="Failed" Type="bit" Nullable="false" />
+          <Property Name="File" Type="varchar" MaxLength="128" />
+        </EntityType>
+        <Association Name="WorkItem_WorkItemUid">
+          <End Role="workitem" Type="Self.workitem" Multiplicity="0..1" />
+          <End Role="workitemuid" Type="Self.workitemuid" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="workitem">
+              <PropertyRef Name="Oid" />
+            </Principal>
+            <Dependent Role="workitemuid">
+              <PropertyRef Name="WorkItemOid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="dicom_storeModelStoreContainer">
+          <EntitySet Name="configuration" EntityType="Self.configuration" Schema="dicom_store" store:Type="Tables" />
+          <EntitySet Name="device" EntityType="Self.device" Schema="dicom_store" store:Type="Tables" />
+          <EntitySet Name="study" EntityType="Self.study" Schema="dicom_store" store:Type="Tables" />
+          <EntitySet Name="workitem" EntityType="Self.workitem" Schema="dicom_store" store:Type="Tables" />
+          <EntitySet Name="workitemuid" EntityType="Self.workitemuid" Schema="dicom_store" store:Type="Tables" />
+          <AssociationSet Name="WorkItem_WorkItemUid" Association="Self.WorkItem_WorkItemUid">
+            <End Role="workitem" EntitySet="workitem" />
+            <End Role="workitemuid" EntitySet="workitemuid" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="dicom_storeModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="dicom_storeEntities" annotation:LazyLoadingEnabled="true" >
+          <EntitySet Name="configuration" EntityType="dicom_storeModel.configuration" />
+          <EntitySet Name="device" EntityType="dicom_storeModel.device" />
+          <EntitySet Name="study" EntityType="dicom_storeModel.study" />
+          <EntitySet Name="workitem" EntityType="dicom_storeModel.workitem" />
+          <EntitySet Name="workitemuid" EntityType="dicom_storeModel.workitemuid" />
+          <AssociationSet Name="WorkItem_WorkItemUid" Association="dicom_storeModel.WorkItem_WorkItemUid">
+            <End Role="workitem" EntitySet="workitem" />
+            <End Role="workitemuid" EntitySet="workitemuid" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="configuration">
+          <Key>
+            <PropertyRef Name="Oid" />
+          </Key>
+          <Property Name="Oid" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Version" Type="DateTime" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Value" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="device">
+          <Key>
+            <PropertyRef Name="Oid" />
+          </Key>
+          <Property Name="Oid" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Version" Type="DateTime" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="Description" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="Location" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="AETitle" Type="String" Nullable="false" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="HostName" Type="String" Nullable="false" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="Port" Type="Int32" Nullable="false" />
+          <Property Name="StreamingHeaderPort" Type="Int32" />
+          <Property Name="StreamingImagePort" Type="Int32" />
+          <Property Name="IsPriorsServer" Type="Boolean" Nullable="false" />
+          <Property Name="ExtensionData" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="study">
+          <Key>
+            <PropertyRef Name="Oid" />
+          </Key>
+          <Property Name="Oid" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Version" Type="DateTime" />
+          <Property Name="SpecificCharacterSet" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="StudyId" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+          <Property Name="StudyTimeTicks" Type="Int64" />
+          <Property Name="StudyTimeRaw" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+          <Property Name="StudyDate" Type="DateTime" />
+          <Property Name="StudyDateRaw" Type="String" MaxLength="26" FixedLength="false" Unicode="false" />
+          <Property Name="AccessionNumber" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+          <Property Name="StudyInstanceUid" Type="String" Nullable="false" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="StudyDescription" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="ModalitiesInStudy" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+          <Property Name="SopClassesInStudy" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+          <Property Name="NumberOfStudyRelatedSeries" Type="Int32" />
+          <Property Name="NumberOfStudyRelatedInstances" Type="Int32" />
+          <Property Name="ProcedureCodeSequenceCodingSchemeDesignator" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+          <Property Name="ProcedureCodeSequenceCodeValue" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+          <Property Name="PatientsName" Type="String" MaxLength="256" FixedLength="false" Unicode="false" />
+          <Property Name="ReferringPhysiciansName" Type="String" MaxLength="256" FixedLength="false" Unicode="false" />
+          <Property Name="PatientId" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="PatientsSex" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+          <Property Name="PatientsBirthDate" Type="DateTime" />
+          <Property Name="PatientsBirthDateRaw" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+          <Property Name="PatientsBirthTimeTicks" Type="Int64" />
+          <Property Name="PatientsBirthTimeRaw" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+          <Property Name="PatientSpeciesDescription" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="PatientSpeciesCodeSequenceCodingSchemeDesignator" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+          <Property Name="PatientSpeciesCodeSequenceCodeValue" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+          <Property Name="PatientSpeciesCodeSequenceCodeMeaning" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="PatientBreedDescription" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="PatientBreedCodeSequenceCodingSchemeDesignator" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+          <Property Name="PatientBreedCodeSequenceCodeValue" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+          <Property Name="PatientBreedCodeSequenceCodeMeaning" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="ResponsiblePerson" Type="String" MaxLength="256" FixedLength="false" Unicode="false" />
+          <Property Name="ResponsiblePersonRole" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+          <Property Name="ResponsibleOrganization" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="SourceAETitlesInStudy" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+          <Property Name="StationNamesInStudy" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+          <Property Name="InstitutionNamesInStudy" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+          <Property Name="StoreTime" Type="DateTime" />
+          <Property Name="DeleteTime" Type="DateTime" />
+          <Property Name="Deleted" Type="Boolean" Nullable="false" />
+          <Property Name="Reindex" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="workitem">
+          <Key>
+            <PropertyRef Name="Oid" />
+          </Key>
+          <Property Name="Oid" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Version" Type="DateTime" />
+          <Property Name="ScheduledTime" Type="DateTime" Nullable="false" />
+          <Property Name="ExpirationTime" Type="DateTime" Nullable="false" />
+          <Property Name="DeleteTime" Type="DateTime" Nullable="false" />
+          <Property Name="ProcessTime" Type="DateTime" Nullable="false" />
+          <Property Name="RequestedTime" Type="DateTime" Nullable="false" />
+          <Property Name="Status" Type="Int16" Nullable="false" />
+          <Property Name="Type" Type="String" Nullable="false" MaxLength="32" FixedLength="false" Unicode="false" />
+          <Property Name="Priority" Type="Int16" Nullable="false" />
+          <Property Name="FailureCount" Type="Int16" Nullable="false" />
+          <Property Name="StudyInstanceUid" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="SerializedRequest" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <Property Name="SerializedProgress" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="workitemuid" Relationship="dicom_storeModel.WorkItem_WorkItemUid" FromRole="workitem" ToRole="workitemuid" />
+        </EntityType>
+        <EntityType Name="workitemuid">
+          <Key>
+            <PropertyRef Name="Oid" />
+          </Key>
+          <Property Name="Oid" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Version" Type="DateTime" />
+          <Property Name="WorkItemOid" Type="Int64" />
+          <Property Name="SeriesInstanceUid" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="SopInstanceUid" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="Complete" Type="Boolean" Nullable="false" />
+          <Property Name="FailureCount" Type="SByte" />
+          <Property Name="Failed" Type="Boolean" Nullable="false" />
+          <Property Name="File" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="workitem" Relationship="dicom_storeModel.WorkItem_WorkItemUid" FromRole="workitemuid" ToRole="workitem" />
+        </EntityType>
+        <Association Name="WorkItem_WorkItemUid">
+          <End Type="dicom_storeModel.workitem" Role="workitem" Multiplicity="0..1" />
+          <End Type="dicom_storeModel.workitemuid" Role="workitemuid" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="workitem">
+              <PropertyRef Name="Oid" />
+            </Principal>
+            <Dependent Role="workitemuid">
+              <PropertyRef Name="WorkItemOid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="dicom_storeModelStoreContainer" CdmEntityContainer="dicom_storeEntities" >
+          <EntitySetMapping Name="configuration">
+            <EntityTypeMapping TypeName="dicom_storeModel.configuration">
+              <MappingFragment StoreEntitySet="configuration">
+                <ScalarProperty Name="Value" ColumnName="Value" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Version" ColumnName="Version" />
+                <ScalarProperty Name="Oid" ColumnName="Oid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="device">
+            <EntityTypeMapping TypeName="dicom_storeModel.device">
+              <MappingFragment StoreEntitySet="device">
+                <ScalarProperty Name="ExtensionData" ColumnName="ExtensionData" />
+                <ScalarProperty Name="IsPriorsServer" ColumnName="IsPriorsServer" />
+                <ScalarProperty Name="StreamingImagePort" ColumnName="StreamingImagePort" />
+                <ScalarProperty Name="StreamingHeaderPort" ColumnName="StreamingHeaderPort" />
+                <ScalarProperty Name="Port" ColumnName="Port" />
+                <ScalarProperty Name="HostName" ColumnName="HostName" />
+                <ScalarProperty Name="AETitle" ColumnName="AETitle" />
+                <ScalarProperty Name="Location" ColumnName="Location" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Version" ColumnName="Version" />
+                <ScalarProperty Name="Oid" ColumnName="Oid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="study">
+            <EntityTypeMapping TypeName="dicom_storeModel.study">
+              <MappingFragment StoreEntitySet="study">
+                <ScalarProperty Name="Reindex" ColumnName="Reindex" />
+                <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+                <ScalarProperty Name="DeleteTime" ColumnName="DeleteTime" />
+                <ScalarProperty Name="StoreTime" ColumnName="StoreTime" />
+                <ScalarProperty Name="InstitutionNamesInStudy" ColumnName="InstitutionNamesInStudy" />
+                <ScalarProperty Name="StationNamesInStudy" ColumnName="StationNamesInStudy" />
+                <ScalarProperty Name="SourceAETitlesInStudy" ColumnName="SourceAETitlesInStudy" />
+                <ScalarProperty Name="ResponsibleOrganization" ColumnName="ResponsibleOrganization" />
+                <ScalarProperty Name="ResponsiblePersonRole" ColumnName="ResponsiblePersonRole" />
+                <ScalarProperty Name="ResponsiblePerson" ColumnName="ResponsiblePerson" />
+                <ScalarProperty Name="PatientBreedCodeSequenceCodeMeaning" ColumnName="PatientBreedCodeSequenceCodeMeaning" />
+                <ScalarProperty Name="PatientBreedCodeSequenceCodeValue" ColumnName="PatientBreedCodeSequenceCodeValue" />
+                <ScalarProperty Name="PatientBreedCodeSequenceCodingSchemeDesignator" ColumnName="PatientBreedCodeSequenceCodingSchemeDesignator" />
+                <ScalarProperty Name="PatientBreedDescription" ColumnName="PatientBreedDescription" />
+                <ScalarProperty Name="PatientSpeciesCodeSequenceCodeMeaning" ColumnName="PatientSpeciesCodeSequenceCodeMeaning" />
+                <ScalarProperty Name="PatientSpeciesCodeSequenceCodeValue" ColumnName="PatientSpeciesCodeSequenceCodeValue" />
+                <ScalarProperty Name="PatientSpeciesCodeSequenceCodingSchemeDesignator" ColumnName="PatientSpeciesCodeSequenceCodingSchemeDesignator" />
+                <ScalarProperty Name="PatientSpeciesDescription" ColumnName="PatientSpeciesDescription" />
+                <ScalarProperty Name="PatientsBirthTimeRaw" ColumnName="PatientsBirthTimeRaw" />
+                <ScalarProperty Name="PatientsBirthTimeTicks" ColumnName="PatientsBirthTimeTicks" />
+                <ScalarProperty Name="PatientsBirthDateRaw" ColumnName="PatientsBirthDateRaw" />
+                <ScalarProperty Name="PatientsBirthDate" ColumnName="PatientsBirthDate" />
+                <ScalarProperty Name="PatientsSex" ColumnName="PatientsSex" />
+                <ScalarProperty Name="PatientId" ColumnName="PatientId" />
+                <ScalarProperty Name="ReferringPhysiciansName" ColumnName="ReferringPhysiciansName" />
+                <ScalarProperty Name="PatientsName" ColumnName="PatientsName" />
+                <ScalarProperty Name="ProcedureCodeSequenceCodeValue" ColumnName="ProcedureCodeSequenceCodeValue" />
+                <ScalarProperty Name="ProcedureCodeSequenceCodingSchemeDesignator" ColumnName="ProcedureCodeSequenceCodingSchemeDesignator" />
+                <ScalarProperty Name="NumberOfStudyRelatedInstances" ColumnName="NumberOfStudyRelatedInstances" />
+                <ScalarProperty Name="NumberOfStudyRelatedSeries" ColumnName="NumberOfStudyRelatedSeries" />
+                <ScalarProperty Name="SopClassesInStudy" ColumnName="SopClassesInStudy" />
+                <ScalarProperty Name="ModalitiesInStudy" ColumnName="ModalitiesInStudy" />
+                <ScalarProperty Name="StudyDescription" ColumnName="StudyDescription" />
+                <ScalarProperty Name="StudyInstanceUid" ColumnName="StudyInstanceUid" />
+                <ScalarProperty Name="AccessionNumber" ColumnName="AccessionNumber" />
+                <ScalarProperty Name="StudyDateRaw" ColumnName="StudyDateRaw" />
+                <ScalarProperty Name="StudyDate" ColumnName="StudyDate" />
+                <ScalarProperty Name="StudyTimeRaw" ColumnName="StudyTimeRaw" />
+                <ScalarProperty Name="StudyTimeTicks" ColumnName="StudyTimeTicks" />
+                <ScalarProperty Name="StudyId" ColumnName="StudyId" />
+                <ScalarProperty Name="SpecificCharacterSet" ColumnName="SpecificCharacterSet" />
+                <ScalarProperty Name="Version" ColumnName="Version" />
+                <ScalarProperty Name="Oid" ColumnName="Oid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="workitem">
+            <EntityTypeMapping TypeName="dicom_storeModel.workitem">
+              <MappingFragment StoreEntitySet="workitem">
+                <ScalarProperty Name="SerializedProgress" ColumnName="SerializedProgress" />
+                <ScalarProperty Name="SerializedRequest" ColumnName="SerializedRequest" />
+                <ScalarProperty Name="StudyInstanceUid" ColumnName="StudyInstanceUid" />
+                <ScalarProperty Name="FailureCount" ColumnName="FailureCount" />
+                <ScalarProperty Name="Priority" ColumnName="Priority" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="RequestedTime" ColumnName="RequestedTime" />
+                <ScalarProperty Name="ProcessTime" ColumnName="ProcessTime" />
+                <ScalarProperty Name="DeleteTime" ColumnName="DeleteTime" />
+                <ScalarProperty Name="ExpirationTime" ColumnName="ExpirationTime" />
+                <ScalarProperty Name="ScheduledTime" ColumnName="ScheduledTime" />
+                <ScalarProperty Name="Version" ColumnName="Version" />
+                <ScalarProperty Name="Oid" ColumnName="Oid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="workitemuid">
+            <EntityTypeMapping TypeName="dicom_storeModel.workitemuid">
+              <MappingFragment StoreEntitySet="workitemuid">
+                <ScalarProperty Name="File" ColumnName="File" />
+                <ScalarProperty Name="Failed" ColumnName="Failed" />
+                <ScalarProperty Name="FailureCount" ColumnName="FailureCount" />
+                <ScalarProperty Name="Complete" ColumnName="Complete" />
+                <ScalarProperty Name="SopInstanceUid" ColumnName="SopInstanceUid" />
+                <ScalarProperty Name="SeriesInstanceUid" ColumnName="SeriesInstanceUid" />
+                <ScalarProperty Name="WorkItemOid" ColumnName="WorkItemOid" />
+                <ScalarProperty Name="Version" ColumnName="Version" />
+                <ScalarProperty Name="Oid" ColumnName="Oid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,518 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DescriptionFileStoreChanged" xml:space="preserve">
+    <value>如果您希望保留现有的报告, 则必须手动将其复制到新的
+重新启动本地服务之前的位置。否则, 应重新启动本地服务
+并立即重新编制索引。</value>
+    <comment>If you wish to keep your existing studies, you must manually copy them to the new
+location before restarting the local service. Otherwise, you should restart the local service
+and immediately re-index.</comment>
+  </data>
+  <data name="DescriptionPriorsServers" xml:space="preserve">
+    <value>请检查应自动搜索的服务器, 以获取先前的检查。</value>
+    <comment>Please check the servers that should be automatically searched for prior studies.</comment>
+  </data>
+  <data name="DescriptionStorageOptions" xml:space="preserve">
+    <value>除非停止本地服务, 否则无法更改文件存储位置。文件存储发生更改后, 必须在重新启动本地服务之前手动将文件从旧位置复制, 或者只需重新启动本地服务并立即重新编制索引。
+
+如果超过最大磁盘使用量, 工作站将拒绝导入映像或通过网络接收映像, 以避免耗尽磁盘。如果使用的空间达到最大值, 建议您增加最大使用率、删除某些检查或将文件存储移动到容量更大的磁盘。</value>
+    <comment>The file store location cannot be changed unless the local service is stopped. Once the file store has changed, you must either manually copy files over from the old location before restarting the local service, or simply restart the local service and immediately re-index.
+
+If the maximum disk usage is exceeded, the Workstation will refuse to import images or receive them over the network in order to avoid exhausting the disk. If the used space is reaching the maximum, it is recommended you increase the maximum usage, delete some studies, or move the file store to a disk with more capacity.</comment>
+  </data>
+  <data name="ExampleGroup" xml:space="preserve">
+    <value>示例组</value>
+    <comment>Example Group</comment>
+  </data>
+  <data name="ExampleLocation" xml:space="preserve">
+    <value>Rm 101</value>
+    <comment>Rm 101</comment>
+  </data>
+  <data name="ExampleServer" xml:space="preserve">
+    <value>示例服务器</value>
+    <comment>Example Server</comment>
+  </data>
+  <data name="FormatLocalServerConfigurationUnavailable" xml:space="preserve">
+    <value>{0} (离线)
+配置当前不可用。</value>
+    <comment>{0} (Offline)
+The configuration is currently unavailable.</comment>
+  </data>
+  <data name="FormatLocalServerDetails" xml:space="preserve">
+    <value>{0}
+AE 标题: {1}
+主机地址: {2}
+监听端口: {3}</value>
+    <comment>{0}
+AE Title: {1}
+Host: {2}
+Listening Port: {3}</comment>
+  </data>
+  <data name="FormatLocalServerOfflineDetails" xml:space="preserve">
+    <value>{0}(离线)
+AE 标题: {1}
+主机地址: {2}
+监听端口: {3}</value>
+    <comment>{0} (Offline)
+AE Title: {1}
+Host: {2}
+Listening Port: {3}</comment>
+  </data>
+  <data name="FormatServerConflict" xml:space="preserve">
+    <value>服务器属性与现有项 ({0}) 冲突。
+每台服务器必须具有唯一的名称, 并且不能具有与另一台服务器相同的 ae 标题、主机和端口。</value>
+    <comment>The server properties conflict with an existing entry ({0}).
+Each server must have a unique Name and cannot have the same AE Title, Host and Port as another server.</comment>
+  </data>
+  <data name="FormatServerDetails" xml:space="preserve">
+    <value>{0}
+AE 标题: {1}
+主机地址: {2}
+监听端口: {3}</value>
+    <comment>{0}
+AE Title: {1}
+Host: {2}
+Listening Port: {3}</comment>
+  </data>
+  <data name="FormatServerGroupConflict" xml:space="preserve">
+    <value>服务器组 "{0}" 与 "{1}" 冲突。
+请选择其他服务器组名称。</value>
+    <comment>The Server Group '{0}' conflicts with '{1}'.
+Please choose another Server Group Name.</comment>
+  </data>
+  <data name="FormatStreamingDetails" xml:space="preserve">
+    <value>流式标头端口: {0}
+流式图像端口: {1}</value>
+    <comment>Streaming Header Port: {0}
+Streaming Image Port: {1}</comment>
+  </data>
+  <data name="LabelContextMenu" xml:space="preserve">
+    <value>上下文菜单</value>
+    <comment>Context Menu</comment>
+  </data>
+  <data name="LabelMainMenu" xml:space="preserve">
+    <value>主菜单</value>
+    <comment>Main Menu</comment>
+  </data>
+  <data name="LabelToolbar" xml:space="preserve">
+    <value>工具栏</value>
+    <comment>Toolbar</comment>
+  </data>
+  <data name="LinkLabelStartLocalService" xml:space="preserve">
+    <value>启动本地服务</value>
+    <comment>Start Local Service</comment>
+  </data>
+  <data name="LinkLabelStopLocalService" xml:space="preserve">
+    <value>停止本地服务</value>
+    <comment>Stop Local Service</comment>
+  </data>
+  <data name="LocalConfiguration" xml:space="preserve">
+    <value>本地</value>
+    <comment>Local</comment>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>位置: {0}</value>
+    <comment>Location: {0}</comment>
+  </data>
+  <data name="MenuAddServer" xml:space="preserve">
+    <value>添加服务器</value>
+    <comment>Add server</comment>
+  </data>
+  <data name="MenuAddServerGroup" xml:space="preserve">
+    <value>添加服务器组</value>
+    <comment>Add server group</comment>
+  </data>
+  <data name="MenuCustomizeActionModels" xml:space="preserve">
+    <value>&amp; 自定义..</value>
+    <comment>&amp;Customize...</comment>
+  </data>
+  <data name="MenuDelete" xml:space="preserve">
+    <value>删除</value>
+    <comment>Delete</comment>
+  </data>
+  <data name="MenuEdit" xml:space="preserve">
+    <value>编辑</value>
+    <comment>Edit</comment>
+  </data>
+  <data name="MenuSharedConfiguration" xml:space="preserve">
+    <value>系统配置</value>
+    <comment>System Configuration</comment>
+  </data>
+  <data name="MenuVerify" xml:space="preserve">
+    <value>验证</value>
+    <comment>Verify</comment>
+  </data>
+  <data name="MessageActionModelUpdateFailure" xml:space="preserve">
+    <value>更新操作模型失败</value>
+    <comment>Failed to update action models</comment>
+  </data>
+  <data name="MessageCannotChangeFileStoreAndStudyDeletionSimultaneously" xml:space="preserve">
+    <value>文件存储和检查删除必须分别更改</value>
+    <comment>File Store and Study Deletion must be changed separately</comment>
+  </data>
+  <data name="MessageCEchoVerificationPrefix" xml:space="preserve">
+    <value>c-echo 验证:</value>
+    <comment>C-ECHO Verification:</comment>
+  </data>
+  <data name="MessageCEchoVerificationSingleServerResultFail" xml:space="preserve">
+    <value>{0}: 失败</value>
+    <comment>{0}: fail</comment>
+  </data>
+  <data name="MessageCEchoVerificationSingleServerResultSuccess" xml:space="preserve">
+    <value>{0}: 成功</value>
+    <comment>{0}: successful</comment>
+  </data>
+  <data name="MessageConfirmDeleteServer" xml:space="preserve">
+    <value>确实要删除选定的服务器吗？</value>
+    <comment>Are you sure you want to delete the selected server?</comment>
+  </data>
+  <data name="MessageConfirmDeleteServerGroup" xml:space="preserve">
+    <value>确实要删除选定的服务器组吗？</value>
+    <comment>Are you sure you want to delete the selected server group?</comment>
+  </data>
+  <data name="MessageFailedToSavePriorsServers" xml:space="preserve">
+    <value>未能保存原始服务器更改。</value>
+    <comment>Failed to save priors server changes.</comment>
+  </data>
+  <data name="MessageFileStoreChanged" xml:space="preserve">
+    <value>文件存储已更改</value>
+    <comment>File store has changed</comment>
+  </data>
+  <data name="MessageHostNameCannotBeEmpty" xml:space="preserve">
+    <value>主机名不能为空。</value>
+    <comment>The Host Name cannot be empty.</comment>
+  </data>
+  <data name="MessageKeyStrokeAlreadyAssigned" xml:space="preserve">
+    <value>快捷方式 {0} 已分配给 {1}。是否要重新分配快捷方式？</value>
+    <comment>The shortcut {0} is already assigned to {1}. Do you wish to reassign the shortcut?</comment>
+  </data>
+  <data name="MessageKeyStrokeReserved" xml:space="preserve">
+    <value>快捷方式 {0} 是保留的, 不能重新分配。</value>
+    <comment>The shortcut {0} is reserved and cannot be reassigned.</comment>
+  </data>
+  <data name="MessageMouseButtonActiveToolAssignmentConflict" xml:space="preserve">
+    <value>{0} 的全局工具已分配给 {1}。只要此工具处于活动状态, 就无法使用 {1} 的全局快捷方式。是否仍要指定此鼠标按钮？</value>
+    <comment>The global tool for {0} is already assigned to {1}. You will not be able to use the global shortcut for {1} whenever this tool is active. Do you still wish to assign this mouse button?</comment>
+  </data>
+  <data name="MessageMouseButtonGlobalToolAlreadyAssigned" xml:space="preserve">
+    <value>{0} 的全局工具已分配给 {1}。是否要重新分配鼠标按钮快捷方式？</value>
+    <comment>The global tool for {0} is already assigned to {1}. Do you wish to reassign the mouse button shortcut?</comment>
+  </data>
+  <data name="MessageMouseButtonGlobalToolAssignmentConflict" xml:space="preserve">
+    <value>有{0}的有效工具（例如{1}）。只要{1}处于活动状态，您将无法使用此全局快捷方式。你还想分配这个鼠标按钮吗？</value>
+    <comment>There are active tools for {0} (e.g. {1}). You will not be able to use this global shortcut whenever {1} is active. Do you still wish to assign this mouse button?</comment>
+  </data>
+  <data name="MessageMouseButtonInitialToolAlreadyAssigned" xml:space="preserve">
+    <value>{0} 的默认工具已分配给 {1}。是否要重新分配鼠标按钮？</value>
+    <comment>The default tool for {0} is already assigned to {1}. Do you wish to reassign the mouse button?</comment>
+  </data>
+  <data name="MessageNoServersSelected" xml:space="preserve">
+    <value>未选择任何服务器。 请至少选择一台服务器, 然后重试。</value>
+    <comment>No servers have been selected.  Please select at least one server and try again.</comment>
+  </data>
+  <data name="MessagePortInvalid" xml:space="preserve">
+    <value>端口必须在1到6535之间。</value>
+    <comment>The Port must be between 1 and 65535.</comment>
+  </data>
+  <data name="MessageServerAEInvalidCharacters" xml:space="preserve">
+    <value>AE 标题包含无效字符。</value>
+    <comment>The AE Title contains invalid characters.</comment>
+  </data>
+  <data name="MessageServerAEInvalidLength" xml:space="preserve">
+    <value>AE 标题必须介于1到16个字符之间。</value>
+    <comment>The AE Title must be between 1 and 16 characters.</comment>
+  </data>
+  <data name="MessageServerGroupNameCannotBeEmpty" xml:space="preserve">
+    <value>服务器组名称不能为空。</value>
+    <comment>The Server Group Name cannot be empty.</comment>
+  </data>
+  <data name="MessageServerNameCannotBeEmpty" xml:space="preserve">
+    <value>服务器名称不能为空。</value>
+    <comment>The Server Name cannot be empty.</comment>
+  </data>
+  <data name="MessageStorageHelp" xml:space="preserve">
+    <value>点击查看检查存储选项的说明。</value>
+    <comment>Click for an explanation of study storage options.</comment>
+  </data>
+  <data name="MessageUnableToStartLocalService" xml:space="preserve">
+    <value>无法启动本地服务。有关详细信息, 请参阅日志。</value>
+    <comment>Failed to start the local service. See the logs for more details.</comment>
+  </data>
+  <data name="MessageUnableToStopLocalService" xml:space="preserve">
+    <value>无法停止本地服务。有关详细信息, 请参阅日志。</value>
+    <comment>Failed to stop the local service. See the logs for more details.</comment>
+  </data>
+  <data name="MonitorConfiguration" xml:space="preserve">
+    <value>窗口配置</value>
+    <comment>Window Configuration</comment>
+  </data>
+  <data name="MyServersTitle" xml:space="preserve">
+    <value>我的服务器</value>
+    <comment>My Servers</comment>
+  </data>
+  <data name="MyStudiesTitle" xml:space="preserve">
+    <value>我的检查</value>
+    <comment>My Studies</comment>
+  </data>
+  <data name="NotApplicable" xml:space="preserve">
+    <value>N/A</value>
+    <comment>N/A</comment>
+  </data>
+  <data name="PathContextMenuConfiguration" xml:space="preserve">
+    <value>上下文菜单 (图像)</value>
+    <comment>Context Menu (Image)</comment>
+  </data>
+  <data name="PriorsServersConfiguration" xml:space="preserve">
+    <value>原始服务器</value>
+    <comment>Priors Servers</comment>
+  </data>
+  <data name="PublishingConfiguration" xml:space="preserve">
+    <value>发布中...</value>
+    <comment>Publishing</comment>
+  </data>
+  <data name="ServerConfiguration" xml:space="preserve">
+    <value>DICOM 服务器</value>
+    <comment>DICOM Server</comment>
+  </data>
+  <data name="StorageConfiguration" xml:space="preserve">
+    <value>检查存储</value>
+    <comment>Study Storage</comment>
+  </data>
+  <data name="TitleAddNewServer" xml:space="preserve">
+    <value>添加新服务器</value>
+    <comment>Add New Server</comment>
+  </data>
+  <data name="TitleAddServerGroup" xml:space="preserve">
+    <value>添加新服务器组</value>
+    <comment>Add New Server Group</comment>
+  </data>
+  <data name="TitleCustomizeActionModels" xml:space="preserve">
+    <value>自定义菜单和工具栏</value>
+    <comment>Customize Menus and Toolbars</comment>
+  </data>
+  <data name="TitleEditServer" xml:space="preserve">
+    <value>编辑服务器</value>
+    <comment>Edit Server</comment>
+  </data>
+  <data name="TitleEditServerGroup" xml:space="preserve">
+    <value>编辑服务器组</value>
+    <comment>Edit Server Group</comment>
+  </data>
+  <data name="TitleMyServers" xml:space="preserve">
+    <value>我的服务器</value>
+    <comment>My Servers</comment>
+  </data>
+  <data name="TitleSelectFileStore" xml:space="preserve">
+    <value>选择文件存储文件夹</value>
+    <comment>Select File Store Folder</comment>
+  </data>
+  <data name="TitleSharedConfiguration" xml:space="preserve">
+    <value>系统配置</value>
+    <comment>System Configuration</comment>
+  </data>
+  <data name="ToolbarAddServer" xml:space="preserve">
+    <value>添加服务器</value>
+    <comment>Add server</comment>
+  </data>
+  <data name="ToolbarAddServerGroup" xml:space="preserve">
+    <value>添加服务器组</value>
+    <comment>Add server group</comment>
+  </data>
+  <data name="ToolbarDelete" xml:space="preserve">
+    <value>删除</value>
+    <comment>Delete</comment>
+  </data>
+  <data name="ToolbarEdit" xml:space="preserve">
+    <value>编辑</value>
+    <comment>Edit</comment>
+  </data>
+  <data name="ToolbarVerify" xml:space="preserve">
+    <value>验证</value>
+    <comment>Verify</comment>
+  </data>
+  <data name="TooltipAddServer" xml:space="preserve">
+    <value>添加服务器</value>
+    <comment>Add server</comment>
+  </data>
+  <data name="TooltipAddServerGroup" xml:space="preserve">
+    <value>添加服务器组</value>
+    <comment>Add server group</comment>
+  </data>
+  <data name="TooltipDelete" xml:space="preserve">
+    <value>删除服务器或服务器组</value>
+    <comment>Delete server or server group</comment>
+  </data>
+  <data name="TooltipEdit" xml:space="preserve">
+    <value>编辑服务器或服务器组</value>
+    <comment>Edit server or server group</comment>
+  </data>
+  <data name="TooltipVerify" xml:space="preserve">
+    <value>验证服务器或服务器组</value>
+    <comment>Verify server or server group</comment>
+  </data>
+  <data name="ValidationAETitleInvalidCharacters" xml:space="preserve">
+    <value>AE 标题包含无效字符。</value>
+    <comment>The AE Title contains invalid characters.</comment>
+  </data>
+  <data name="ValidationAETitleLengthIncorrect" xml:space="preserve">
+    <value>AE 标题必须介于1到16个字符之间。</value>
+    <comment>The AE Title must be between 1 and 16 characters.</comment>
+  </data>
+  <data name="ValidationCannotChangeDeletionRule" xml:space="preserve">
+    <value>必须先启动本地服务, 然后才能更改自动检查删除行为。
+您可以立即单击 "启动本地服务" 链接, 或取消更改。</value>
+    <comment>The local service must be started before the automatic study deletion behaviour can be changed.
+You can click the "Start Local Service" link now, or cancel your changes.</comment>
+  </data>
+  <data name="ValidationDriveDoesNotExist" xml:space="preserve">
+    <value>指定的驱动器 ({0}) 不存在。</value>
+    <comment>The specified drive ({0}) does not exist.</comment>
+  </data>
+  <data name="ValidationDriveInvalid" xml:space="preserve">
+    <value>指定的路径无效。</value>
+    <comment>The specified path is invalid.</comment>
+  </data>
+  <data name="ValidationMessageCannotChangeFileStore" xml:space="preserve">
+    <value>必须先停止本地服务, 然后才能更改文件存储。
+您可以立即单击 "停止本地服务" 链接, 或取消更改。</value>
+    <comment>The local service must be stopped before the file store can be changed.
+You can click the "Stop Local Service" link now, or cancel your changes.</comment>
+  </data>
+  <data name="ValidationPortOutOfRange" xml:space="preserve">
+    <value>端口必须在1到6535之间。</value>
+    <comment>The Port must be between 1 and 65535.</comment>
+  </data>
+  <data name="DicomSendConfiguration" xml:space="preserve">
+    <value>DICOM 发送</value>
+    <comment>DICOM Send</comment>
+  </data>
+  <data name="ConfirmAETitleConflict_MultipleServers" xml:space="preserve">
+    <value>{0} 其他服务器具有相同的 ae 标题, 但不同的主机名和/或端口。确实要应用此更改吗？</value>
+    <comment>{0} other servers exist with the same AE Title, but different host names and/or ports. Are you sure you want to apply this change?</comment>
+  </data>
+  <data name="ConfirmAETitleConflict_OneServer" xml:space="preserve">
+    <value>另一台服务器具有相同的 ae 标题, 但具有不同的主机名和/或端口。确实要应用此更改吗？</value>
+    <comment>Another server exists with the same AE Title, but a different host name and/or port. Are you sure you want to apply this change?</comment>
+  </data>
+  <data name="MessageSystemConfigurationNoPermission" xml:space="preserve">
+    <value>您没有查看系统配置的权限。</value>
+    <comment>You do not have permission to view System Configuration.</comment>
+  </data>
+</root>
