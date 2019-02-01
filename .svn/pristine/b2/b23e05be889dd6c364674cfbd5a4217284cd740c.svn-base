@@ -1,1 +1,0 @@
-We maintain our own copy of the source code for NHibernate2.1 in the ClearCanvas Internal repository.  If you need to rebuild from source, use the source located there.
